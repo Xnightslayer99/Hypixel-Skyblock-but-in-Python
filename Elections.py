@@ -137,7 +137,7 @@ while (game == "run"):
                 AAA = input("Whos perks do you wish to see?(enter number corresponding to the candidate that you wish to see)")
                 if AAA == "1":
                     if c1 == "Aatrox":
-                        AAAA = random.randint(3, 6)
+                        AAAA = random.randint(0, 6)
                         if AAAA == 0:
                             c1perks = aatroxperks[0]
                             if perksc1 != "french_bread_gud":
