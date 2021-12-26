@@ -16,17 +16,18 @@ smc3 = 0
 cml = 0
 voteNow = False
 c1perks = "None"
-aatroxperks = ["1. Slayer XP Buff: Earn 25% more Slayer XP.", "2. Pathfinder: Gain rare drops 20% more often.", "3. SLASHED Pricing: Starting Slayer quests is half price."]
-barryperks = ["1. Magic XP Boost: Gain 15% more Enchanting and  Alchemy XP.", "2. Arcane Catalyst: Spells deal 15% increased damage.", "3. Astral Negotiator: Enchanting and anvils costs -15% less experience."]
-coleperks = ["1. Mining XP Buff: Earn 1.5x Mining experience", "2. Prospection: Mining minions work 25% faster.(minions are a WIP)", "3. Mining Fiesta: Starts a special event in Early Autumn. Earn 1.5x Mining exp, 2x drops and Unique Loot. Active only on public islands.(WIP, when added it should compound with perk no.1)"]
-scorpiusperks = ["1.Bribe: If Scorpius wins and you voted for him, Mayor Scorpius will offer you 1,000,000 coins as a token of grattitude.\n2. Darker Auctions: Scorpius will intrude in Dark Auctions, increasing the number of rounds to 7 and offering special items.(WIP)"]
-dianaperks = ["Pet XP Buff: Gain 35% more pet XP.", "Lucky!: Gain +25 Pet Luck(Pets are WIP)", "Mythological Ritual: Mayor Diana will sell the Griffin Pet, which lets you find Mythological Creatures and tons of unique items.(WIP)"]
-diazperks = ["Barrier Street: Gain 25% more bank interest.(WIP)", "Shopping Spree: Increase daily NPC buy limits by 10x.(WIP)"]
-foxyperks = ["Sweet Tooth: Grants +20% chance to get candy from mobs during the Spooky Festival.(WIP)", "Benevolence: Gain 2.5x gifts from the attack on Jerry's Workshop.(WIP)", "Extra Event: Schedules an extra event during the year.(WIP)"]
-marinaperks = ["Fishing XP Buff: Gain 50% more fishing XP", "Luck of the Sea 2.0: Gain +15 Sea creature chance icon.png Sea Creature Chance.", "Fishing Festival: Start a special fishing event during the first 3 days of each month! Fish and fight dangerous Sharks and earn unique Shark loot."]
-paulperks = ["EZPZ: Gain 10 extra bonus score in Dungeons.(WIP)", "Marauder: Dungeon reward chests are 20% cheaper.(WIP)", "Benediction: Blessings are 25% stronger.(WIP)"]
-derpyperks = ["1. TURBO MINIONS!!!: Minions have double the output! \n2. AH CLOSED!!!: The Auction House will be closed while Derpy is elected!\n3. DOUBLE MOBS HP!!!: ALL monsters have double health!\n 4. MOAR SKILLZ!!!: Gain +50% more skill experience!(All of derpy's perks are a WIP)"]
-jerryperks = ["1. Perkpocalypse: Activates all perks of another mayor every 18 SkyBlock days (6 hours).\n2. Statspocalypse: Increases all stats by 10%.\n3. Jerrypocalypse: Reveal hidden Jerries from logging, farming, mining, and killing mobs.(Perks 1 and 3 are a WIP)"]
+perksc1 = "french_bread_gud"
+aatroxperks = list(("1. Slayer XP Buff: Earn 25% more Slayer XP.", "2. Pathfinder: Gain rare drops 20% more often.", "3. SLASHED Pricing: Starting Slayer quests is half price."))
+barryperks = ("1. Magic XP Boost: Gain 15% more Enchanting and  Alchemy XP.", "2. Arcane Catalyst: Spells deal 15% increased damage.", "3. Astral Negotiator: Enchanting and anvils costs -15% less experience.")
+coleperks = ("1. Mining XP Buff: Earn 1.5x Mining experience", "2. Prospection: Mining minions work 25% faster.(minions are a WIP)", "3. Mining Fiesta: Starts a special event in Early Autumn. Earn 1.5x Mining exp, 2x drops and Unique Loot. Active only on public islands.(WIP, when added it should compound with perk no.1)")
+scorpiusperks = "1.Bribe: If Scorpius wins and you voted for him, Mayor Scorpius will offer you 1,000,000 coins as a token of grattitude.\n2. Darker Auctions: Scorpius will intrude in Dark Auctions, increasing the number of rounds to 7 and offering special items.(WIP)"
+dianaperks = ("Pet XP Buff: Gain 35% more pet XP.", "Lucky!: Gain +25 Pet Luck(Pets are WIP)", "Mythological Ritual: Mayor Diana will sell the Griffin Pet, which lets you find Mythological Creatures and tons of unique items.(WIP)")
+diazperks = ("Barrier Street: Gain 25% more bank interest.(WIP)", "Shopping Spree: Increase daily NPC buy limits by 10x.(WIP)")
+foxyperks = ("Sweet Tooth: Grants +20% chance to get candy from mobs during the Spooky Festival.(WIP)", "Benevolence: Gain 2.5x gifts from the attack on Jerry's Workshop.(WIP)", "Extra Event: Schedules an extra event during the year.(WIP)")
+marinaperks = ("Fishing XP Buff: Gain 50% more fishing XP", "Luck of the Sea 2.0: Gain +15 Sea creature chance icon.png Sea Creature Chance.", "Fishing Festival: Start a special fishing event during the first 3 days of each month! Fish and fight dangerous Sharks and earn unique Shark loot.")
+paulperks = ("EZPZ: Gain 10 extra bonus score in Dungeons.(WIP)", "Marauder: Dungeon reward chests are 20% cheaper.(WIP)", "Benediction: Blessings are 25% stronger.(WIP)")
+derpyperks = "1. TURBO MINIONS!!!: Minions have double the output! \n2. AH CLOSED!!!: The Auction House will be closed while Derpy is elected!\n3. DOUBLE MOBS HP!!!: ALL monsters have double health!\n 4. MOAR SKILLZ!!!: Gain +50% more skill experience!(All of derpy's perks are a WIP)"
+jerryperks = "1. Perkpocalypse: Activates all perks of another mayor every 18 SkyBlock days (6 hours).\n2. Statspocalypse: Increases all stats by 10%.\n3. Jerrypocalypse: Reveal hidden Jerries from logging, farming, mining, and killing mobs.(Perks 1 and 3 are a WIP)"
 def mayorElectionReset():
     mc1 = 0
     mc2 = 0
@@ -47,6 +48,7 @@ def mayorElectionReset():
     cml = 0
     voteNow = False
     c1perks = "None"
+    perksc1 = "french_bread_gud"
 mayors = ["Aatrox", "Barry the Wizard", "Cole the Miner", "Diana", "Diaz", "Foxy", "Marina", " Paul"]
 smayors = ["Jerry", "Derpy", "Scorpius"]
 smayor = "Nancy"
@@ -125,6 +127,7 @@ while (game == "run"):
             c5 = mayors[mc5]
         c1 = "Aatrox"
         print("The current candidates are:", c1+",", c2+",", c3+",", c4+",", "and "+c5)
+        candidates = c1 + c2 + c3 + c4 + c5
         pVoteConfirm = True
         while (pVoteConfirm == True):
             AA = input("What will you do in the election.(valid responses are: 'vote', 'see perks', and 'candidates' if you choose 'vote' you will be forced to vote) ")
@@ -134,22 +137,54 @@ while (game == "run"):
                 AAA = input("Whos perks do you wish to see?(enter number corresponding to the candidate that you wish to see)")
                 if AAA == "1":
                     if c1 == "Aatrox":
-                        AAAA = random.randint(0, 6)
+                        AAAA = random.randint(3, 6)
                         if AAAA == 0:
                             c1perks = aatroxperks[0]
+                            if perksc1 != "french_bread_gud":
+                                print(perksc1)
+                            else:
+                                print(c1perks)
                         if AAAA == 1:
                             c1perks = aatroxperks[1]
+                            if perksc1 != "french_bread_gud":
+                                print(perksc1)
+                            else:
+                                print(c1perks)
                         if AAAA == 2:
                             c1perks = aatroxperks[2]
+                            if perksc1 != "french_bread_gud":
+                                print(perksc1)
+                            else:
+                                print(c1perks)
                         if AAAA == 3:
-                            c1perks = aatroxperks[0, 1]
+                            c1perks = aatroxperks[0]+"\n"+aatroxperks[1]
+                            if perksc1 != "french_bread_gud":
+                                print(perksc1)
+                            else:
+                                print(c1perks)
                         if AAAA == 4:
-                            c1perks = aatroxperks[0, 3]
+                            c1perks = aatroxperks[0]+"\n"+aatroxperks[2]
+                            if perksc1 != "french_bread_gud":
+                                print(perksc1)
+                            else:
+                                print(c1perks)
                         if AAAA == 5:
-                            c1perks = aatroxperks[1, 2]
+                            c1perks = aatroxperks[1]+"\n"+aatroxperks[2]
+                            if perksc1 != "french_bread_gud":
+                                print(perksc1)
+                            else:
+                                print(c1perks)
                         if AAAA == 6:
-                            c1perks == aatroxperks
-                    if c1 == "Barry the WIzard":
+                            c1perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
+                            if perksc1 != "french_bread_gud":
+                                print(perksc1)
+                            else:
+                                print(c1perks)
+                        if perksc1 == "french_bread_gud":
+                            perksc1 = c1perks
+                        if c1perks != perksc1:
+                            c1perks = perksc1
+                    if c1 == "Barry the Wizard":
                         AAAA = random.randint(0, 6)
                     if c1 == "Diana":
                         AAAA = random.randint(0, 6)
@@ -169,7 +204,6 @@ while (game == "run"):
                         c1perks = derpyperks
                     if c1 == "Jerry":
                         c1perks = jerryperks
-                    print(c1perks)
                 if AAA == "2":
                     print(c2perks)
                 if AAA == "3":
