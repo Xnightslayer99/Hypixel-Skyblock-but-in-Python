@@ -1,4 +1,4 @@
-import random
+"Legendary""Epic""Rare""Uncommon""Uncommon""Common""Common"if A == "no" or A == "No":if A == "no" or A == "No":if B == "yes" or B == "Yes":if B == "yes" or B == "Yes":Are you sureimport random
 import time
 gameworks = 1
 coins = 0

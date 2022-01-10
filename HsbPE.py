@@ -333,7 +333,7 @@ you also lose half of your coins, what a noob""")
                stats=stats+1
                coins=coins+15
                B = input("do you want to sell the eye?")
-               if B == "yes":
+               if B == "yes" or B == "Yes":
                   print("Ok I'll pay 600k coins")
                   coins=coins+600000
                if B == "no":
@@ -350,7 +350,7 @@ you also lose half of your coins, what a noob""")
              print("A strange force prevents you from entering it")
    elif A == "summon drag":
       if eyes>=8:
-         C = input("are you sure?")
+         C = input("Are you sure?")
          if C == "yes":
             print("ok you'll summon a dragon")
             eyes=eyes-8
@@ -399,11 +399,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 50mil for the sword")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-50000000
                stats=stats+50000
                gtime=gtime+1
@@ -413,11 +413,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
            print("Very well that will be 1k for the Spirit mask ")
-         if A == "no":
+         if A == "no" or A == "No":
                 print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-1000
                stats=stats*1.2
                gtime=gtime+1
@@ -427,11 +427,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
               print("Very well that will be 10mil for the Ender Artifact")
-         if A == "no":
+         if A == "no" or A == "No":
                   print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-10000000
                stats=stats+100
                gtime=gtime+1
@@ -441,11 +441,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
         	 print("Very well that will be 12mil for the wither artifact")
-         if A == "no":
+         if A == "no" or A == "No":
              print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-12000000
                stats=stats+100
                gtime=gtime+1
@@ -455,11 +455,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 7.5mil for the Pet Parrot")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-7500000
                stats=stats+10000
                gtime=gtime+1
@@ -469,11 +469,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 20mil for the Pet Turtle")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-20000000
                stats=stats+10000
                gtime=gtime+1
@@ -483,11 +483,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 20.5mil for the Pet Jellyfish")
-         if A == "no":
+         if A == "no" or A == "No":
           print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-20500000
                stats=stats+10000
                gtime=gtime+1
@@ -497,11 +497,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 9mil for the sharp 6 book")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-9000000
                stats=stats+1000
                gtime=gtime+1
@@ -511,11 +511,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 6mil for the Giant killer 6 book")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-6000000
                stats=stats+1000
                gtime=gtime+1
@@ -525,11 +525,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 3mil for the Prot 6 book")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-3000000
                stats=stats+1000
                gtime=gtime+1
@@ -539,11 +539,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 3mil for the Growth 6 book")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-3000000
                stats=stats+1000
                gtime=gtime+1
@@ -553,11 +553,11 @@ you also lose half of your coins, what a noob""")
          A = input("What is your answer?")
          if A == "yes":
             print("Very well that will be 9mil for the Power 6 book")
-         if A == "no":
+         if A == "no" or A == "No":
             print("Very well Come back soon")
          if A == "yes":
-            B = input("are you sure?")
-            if B == "yes":
+            B = input("Are you sure?")
+            if B == "yes" or B == "Yes":
                coins=coins-9000000
                stats=stats+1000
                gtime=gtime+1
@@ -582,316 +582,316 @@ you also lose half of your coins, what a noob""")
                        if E == 1:
                            F = random.randint(1,5)
                            if F == 1:
-                               G = "common"
+                               G = "Common"
                            if F == 2:
-                               G = "uncommon"
+                               G = "Uncommon"
                            if F == 3:
-                               G = "rare"
+                               G = "Rare"
                            if F == 4:
-                               G = "epic"
+                               G = "Epic"
                            if F == 5:
-                               G = "legendary"
+                               G = "Legendary"
                                print("I have a", G, "blue whale pet for sale.")
                                A = input("What is your answer?")
                                if A == "yes":
                                    if F == 1:
                                        print("Very well that will be 10k for the Common blue whale pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000
                                                stats=stats+10
                                    if F == 2:
                                        print("Very well that will be 25k for the Uncommon blue whale pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-25000
                                                stats=stats+100
                                    if F == 3:
                                        print("Very well that will be 100k for the rare blue whale pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-100000
                                                stats=stats+1000
                                    if F == 4:
                                        print("Very well that will be 1mil for the epic blue whale pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-1000000
                                                stats=stats+10000
                                    if F == 5:
                                        print("Very well that will be 10mil for the legendary blue whale pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000000
                                                stats=stats+100000
-                                   if A == "no":
-                                       print("Very well. Next gtime I will try to satisfy you.")
+                                   if A == "no" or A == "No":
+                                       print("Very well. Next time I will try to satisfy you.")
 
                        if E == 2:
                            F = random.randint(1,5)
                            if F == 1:
-                               G = "common"
+                               G = "Common"
                            if F == 2:
-                               G = "uncommon"
+                               G = "Uncommon"
                            if F == 3:
-                               G = "rare"
+                               G = "Rare"
                            if F == 4:
-                               G = "epic"
+                               G = "Epic"
                            if F == 5:
-                               G = "legendary"
+                               G = "Legendary"
                                print("I have a", G, "lion pet for sale.")
                                A = input("What is your answer?")
                                if A == "yes":
                                    if F == 1:
                                        print("Very well that will be 10k for the Common lion pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000
                                                stats=stats+10
                                    if F == 2:
                                        print("Very well that will be 25k for the Uncommon lion pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-25000
                                                stats=stats+100
                                    if F == 3:
                                        print("Very well that will be 100k for the rare lion pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-100000
                                                stats=stats+1000
                                    if F == 4:
                                        print("Very well that will be 1mil for the epic lion pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-1000000
                                                stats=stats+10000
                                    if F == 5:
                                        print("Very well that will be 15mil for the legendary lion pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-15000000
                                                stats=stats+100000
-                                   if A == "no":
-                                       print("Very well. Next gtime I will try to satisfy you.")
+                                   if A == "no" or A == "No":
+                                       print("Very well. Next time I will try to satisfy you.")
                        if E == 3:
                            F = random.randint(1,5)
                            if F == 1:
-                               G = "common"
+                               G = "Common"
                            if F == 2:
-                               G = "uncommon"
+                               G = "Uncommon"
                            if F == 3:
-                               G = "rare"
+                               G = "Rare"
                            if F == 4:
-                               G = "epic"
+                               G = "Epic"
                            if F == 5:
-                               G = "legendary"
+                               G = "Legendary"
                                print("I have a", G, "tiger pet for sale.")
                                A = input("What is your answer?")
                                if A == "yes":
                                    if F == 1:
                                        print("Very well that will be 10k for the Common tiger pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000
                                                stats=stats+10
                                    if F == 2:
                                        print("Very well that will be 25k for the Uncommon tiger pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-25000
                                                stats=stats+100
                                    if F == 3:
                                        print("Very well that will be 100k for the rare tiger pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                 coins=coins-100000
                                                 stats=stats+1000
                                    if F == 4:
                                        print("Very well that will be 1mil for the epic tiger pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-1000000
                                                stats=stats+10000
                                    if F == 5:
                                        print("Very well that will be 15mil for the legendary tiger pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-15000000
                                                stats=stats+100000
-                                   if A == "no":
-                                       print("Very well. Next gtime I will try to satisfy you.")
+                                   if A == "no" or A == "No":
+                                       print("Very well. Next time I will try to satisfy you.")
                        if E == 4:
                            F = random.randint(1,5)
                            if F == 1:
-                              G = "common"
+                              G = "Common"
                            if F == 2:
-                              G = "uncommon"
+                              G = "Uncommon"
                            if F == 3:
-                              G = "rare"
+                              G = "Rare"
                            if F == 4:
-                              G = "epic"
+                              G = "Epic"
                            if F == 5:
-                              G = "legendary"
+                              G = "Legendary"
                               print("I have a", G, "giraffe pet for sale.")
                               A = input("What is your answer?")
                               if A == "yes":
                                     if F == 1:
                                        print("Very well that will be 10k for the Common giraffe pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000
                                                stats=stats+10
                                     if F == 2:
                                        print("Very well that will be 25k for the Uncommon giraffe pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-25000
                                                stats=stats+100
                                     if F == 3:
                                        print("Very well that will be 100k for the rare giraffe pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-100000
                                                stats=stats+1000
                                     if F == 4:
                                        print("Very well that will be 1mil for the epic giraffe pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-1000000
                                                stats=stats+10000
                                     if F == 5:
                                        print("Very well that will be 10mil for the legendary giraffe pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000000
                                                stats=stats+100000
-                                    if A == "no":
-                                       print("Very well. Next gtime I will try to satisfy you.")
+                                    if A == "no" or A == "No":
+                                       print("Very well. Next time I will try to satisfy you.")
                        if E == 5:
                            F = random.randint(1,5)
                            if F == 1:
-                               G = "common"
+                               G = "Common"
                            if F == 2:
-                               G = "uncommon"
+                               G = "Uncommon"
                            if F == 3:
-                               G = "rare"
+                               G = "Rare"
                            if F == 4:
-                               G = "epic"
+                               G = "Epic"
                            if F == 5:
-                               G = "legendary"
+                               G = "Legendary"
                                print("I have a", G, "elephant pet for sale.")
                                A = input("What is your answer?")
                                if A == "yes":
                                    if F == 1:
-                                       print("Very well that will be 10k for the Common elephant pet")
+                                       print("Very well that will be 10k for the Common elephant pet.")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000
                                                stats=stats+10
                                    if F == 2:
-                                       print("Very well that will be 25k for the Uncommon elephant pet")
+                                       print("Very well that will be 25k for the Uncommon elephant pet.")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-25000
                                                stats=stats+100
                                    if F == 3:
-                                       print("Very well that will be 100k for the rare elephant pet")
+                                       print("Very well that will be 100k for the rare elephant pet.")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-100000
                                                stats=stats+1000
                                    if F == 4:
-                                       print("Very well that will be 1mil for the epic elephant pet")
+                                       print("Very well that will be 1mil for the epic elephant pet.")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-1000000
                                                stats=stats+10000
                                    if F == 5:
-                                       print("Very well that will be 15mil for the legendary elephant pet")
+                                       print("Very well that will be 15mil for the legendary elephant pet.")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-15000000
                                                stats=stats+100000
-                                   if A == "no":
-                                       print("Very well. Next gtime I will try to satisfy you.")
+                                   if A == "no" or A == "No":
+                                       print("Very well. Next time I will try to satisfy you.")
                        if E == 6:
                             F = random.randint(1,5)
                             if F == 1:
-                               G = "common"
+                               G = "Common"
                             if F == 2:
-                               G = "uncommon"
+                               G = "Uncommon"
                             if F == 3:
-                               G = "rare"
+                               G = "Rare"
                             if F == 4:
-                               G = "epic"
+                               G = "Epic"
                             if F == 5:
-                               G = "legendary"
+                               G = "Legendary"
                             print("I have a", G, "monkey pet for sale.")
                             A = input("What is your answer?")
                             if A == "yes":
                                    if F == 1:
                                        print("Very well that will be 10k for the Common monkey pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-10000
                                                stats=stats+10
                                    if F == 2:
                                        print("Very well that will be 25k for the Uncommon monkey pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-25000
                                                stats=stats+100
                                    if F == 3:
                                        print("Very well that will be 100k for the rare monkey pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-100000
                                                stats=stats+1000
                                    if F == 4:
                                        print("Very well that will be 1mil for the epic monkey pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-1000000
                                                stats=stats+10000
                                    if F == 5:
                                        print("Very well that will be 18mil for the legendary monkey pet")
                                        if A == "yes":
-                                           B = input("are you sure?")
-                                           if B == "yes":
+                                           B = input("Are you sure?")
+                                           if B == "yes" or B == "Yes":
                                                coins=coins-18000000
                                                stats=stats+100000
-                                   if A == "no":
-                                       print("Very well. Next gtime I will try to satisfy you.")
+                                   if A == "no" or A == "No":
+                                       print("Very well. Next time I will try to satisfy you.")
                gtime=0
    if eyes<0:
       gameworks=0
