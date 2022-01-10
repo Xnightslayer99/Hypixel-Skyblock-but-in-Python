@@ -1,6 +1,5 @@
 import random
 import string
-global pname
 pname = str(input("What do you wish to be called?(This cannot be changed later)"))
 damsys = input("Would you like to use the old or the new Damage system?(old = before strength nerf and new = after strength nerf [cannot be changed])")
 name = pname
