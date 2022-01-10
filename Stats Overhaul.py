@@ -3,43 +3,41 @@ import string
 global pname
 pname = str(input("What do you wish to be called?(This cannot be changed later)"))
 damsys = input("Would you like to use the old or the new Damage system?(old = before strength nerf and new = after strength nerf [cannot be changed])")
-class player(object):
-    def _init_(self, name):
-        self.name = pname
-        self.str = 0
-        self.cc = 30
-        self.cd = 50
-        self.hp = 100
-        self.maxhp = 100
-        self.defence = 0
-        self.fero = 0
-        self.scc = 20
-        self.petluck = 0
-        self.mfortune = 0
-        self.ffortune = 0
-        self.fofortune = 0
-        self.magicFind = 0
-        self.int = 0
-        self.abildam = 0
-        self.bdam = 1
-        self.ewdam = 0
-        self.armor = ["none"]
-        self.equipedHelm = "none"
-        self.equipedCp = "none"
-        self.equipedLeg = "none"
-        self.equipedBoots = "none"
-        self.equipedWeapon = "fist"
-        self.dammul = 0
-        self.inv = ["nothing"]
-        self.damsys = damsys
-        if self.damsys == "old" or self.damsys == "Old":
-            def damcalc():
-                damage = (5 + self.ewdam + self.str/5) * (1 + self.str/100) * (1+self.cd/100) * (1+self.dammul/100)
-            GameRunAllow = True
-        if self.damsys == "new" or self.damsys == "New":
-            def damcalc():
-                damage = (5 + self.ewdam) * (1 + self.str/100) * (1 + self.cd / 100) * (1 + self.dammul / 100)
-            GameRunAllow = True
-print ("Hello, "+pname)
+name = pname
+stre = 0
+cc = 30
+cd = 50
+hp = 100
+maxhp = 100
+defence = 0
+fero = 0
+scc = 20
+petluck = 0
+mfortune = 0
+ffortune = 0
+fofortune = 0
+magicFind = 0
+intee = 0
+abildam = 0
+bdam = 1
+ewdam = 0
+armor = ["none"]
+equipedHelm = "none"
+equipedCp = "none"
+equipedLeg = "none"
+equipedBoots = "none"
+equipedWeapon = "fist"
+dammul = 0
+inv = ["nothing"]
+damsys = damsys
+if damsys == "old" or damsys == "Old":
+    def damcalc():
+        damage = (5 + ewdam + stre/5) * (1 + stre/100) * (1+cd/100) * (1+dammul/100)
+    GameRunAllow = True
+if damsys == "new" or damsys == "New":
+    def damcalc():
+        damage = (5 + ewdam) * (1 + stre/100) * (1 + cd / 100) * (1 + dammul / 100)
+    GameRunAllow = True
+printe ("Hello, "+pname)
 while(GameRunAllow == True):
     A = input

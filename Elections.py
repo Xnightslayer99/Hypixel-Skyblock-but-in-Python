@@ -17,6 +17,14 @@ cml = 0
 voteNow = False
 c1perks = "None"
 perksc1 = "french_bread_gud"
+c2perks = "None"
+perksc2 = "french_bread_gud"
+c3perks = "None"
+perksc3 = "french_bread_gud"
+c4perks = "None"
+perksc4 = "french_bread_gud"
+c5perks = "None"
+perksc5 = "french_bread_gud"
 aatroxperks = list(("1. Slayer XP Buff: Earn 25% more Slayer XP.", "2. Pathfinder: Gain rare drops 20% more often.", "3. SLASHED Pricing: Starting Slayer quests is half price."))
 barryperks = ("1. Magic XP Boost: Gain 15% more Enchanting and  Alchemy XP.", "2. Arcane Catalyst: Spells deal 15% increased damage.", "3. Astral Negotiator: Enchanting and anvils costs -15% less experience.")
 coleperks = ("1. Mining XP Buff: Earn 1.5x Mining experience", "2. Prospection: Mining minions work 25% faster.(minions are a WIP)", "3. Mining Fiesta: Starts a special event in Early Autumn. Earn 1.5x Mining exp, 2x drops and Unique Loot. Active only on public islands.(WIP, when added it should compound with perk no.1)")
@@ -49,6 +57,14 @@ def mayorElectionReset():
     voteNow = False
     c1perks = "None"
     perksc1 = "french_bread_gud"
+    c2perks = "None"
+    perksc2 = "french_bread_gud"
+    c3perks = "None"
+    perksc3 = "french_bread_gud"
+    c4perks = "None"
+    perksc4 = "french_bread_gud"
+    c5perks = "None"
+    perksc5 = "french_bread_gud"
 mayors = ["Aatrox", "Barry the Wizard", "Cole the Miner", "Diana", "Diaz", "Foxy", "Marina", " Paul"]
 smayors = ["Jerry", "Derpy", "Scorpius"]
 smayor = "Nancy"
@@ -500,373 +516,1456 @@ while (game == "run"):
                         c1perks = jerryperks
                 if AAA == "2":
                     if c2 == "Aatrox":
-                        AAAA = random.randint(0, 6)
-                        if AAAA == 0:
-                            c2perks = aatroxperks[0]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 1:
-                            c2perks = aatroxperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 2:
-                            c2perks = aatroxperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 3:
-                            c2perks = aatroxperks[0]+"\n"+aatroxperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 4:
-                            c2perks = aatroxperks[0]+"\n"+aatroxperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 5:
-                            c2perks = aatroxperks[1]+"\n"+aatroxperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 6:
-                            c2perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if perksc2 == "french_bread_gud":
-                            perksc2 = c2perks
-                        if c2perks != perksc2:
-                            c2perks = perksc2
-                    if c2 == "Barry the Wizard":
-                        AAAA = random.randint(0, 6)
-                        if AAAA == 0:
-                            c2perks = barryperks[0]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 1:
-                            c2perks = barryperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 2:
-                            c2perks = barryperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 3:
-                            c2perks = barryperks[0]+"\n"+barryperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 4:
-                            c2perks = barryperks[0]+"\n"+barryperks[2]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 5:
-                            c2perks = barryperks[1]+"\n"+barryperks[2]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c2perks)
-                        if AAAA == 6:
-                            c2perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if perksc2 == "french_bread_gud":
-                            perksc2 = c2perks
-                        if c2perks != perksc2:
-                            c2perks = perksc2
-                    if c2 == "Diana":
-                        AAAA = random.randint(0, 6)
-                        if AAAA == 0:
-                            c2perks = dianaperks[0]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 1:
-                            c2perks = dianaperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 2:
-                            c2perks = dianaperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 3:
-                            c2perks = dianaperks[0]+"\n"+dianaperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 4:
-                            c2perks = dianaperks[0]+"\n"+dianaperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 5:
-                            c2perks = dianaperks[1]+"\n"+dianaperks[2]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 6:
-                            c2perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if perksc2 == "french_bread_gud":
-                            perksc1 = c1perks
-                        if c2perks != perksc2:
-                            c2perks = perksc2
-                    if c2 == "Diaz":
-                        AAAA = random.randint(0, 2)
-                        if AAAA == 0:
-                            c2perks = diazperks[0]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 1:
-                            c2perks = diazperks[1]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 2:
-                            c2perks = diazperks[0]+"\n"+diazperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c1perks)
-                    if c2 == "Cole the Miner":
-                        AAAA = random.randint(0, 6)
-                        if AAAA == 0:
-                            c2perks = coleperks[0]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 1:
-                            c2perks = coleperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 2:
-                            c2perks = coleperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 3:
-                            c2perks = coleperks[0]+"\n"+colwperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 4:
-                            c2perks = coleperks[0]+"\n"+coleperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 5:
-                            c2perks = coleperks[1]+"\n"+coleperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 6:
-                            c2perks =  coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if perksc2 == "french_bread_gud":
-                            perksc2 = c2perks
-                        if c2perks != perksc2:
-                            c2perks = perksc2
-                    if c2 == "Foxy":
-                        AAAA = random.randint(0, 6)
-                        if AAAA == 0:
-                            c2perks = foxyperks[0]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c2perks)
-                        if AAAA == 1:
-                            c2perks = foxyperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 2:
-                            c2perks = foxyperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 3:
-                            c2perks = foxyperks[0]+"\n"+foxyperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 4:
-                            c2perks = foxyperks[0]+"\n"+foxyperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 5:
-                            c2perks = foxyperks[1]+"\n"+foxyperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 6:
-                            c2perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if perksc2 == "french_bread_gud":
-                            perksc2 = c2perks
-                        if c2perks != perksc2:
-                            c2perks = perksc2
-                    if c2 == "Marina":
-                        AAAA = random.randint(0, 6)
-                        if AAAA == 0:
-                            c2perks = marinaperks[0]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 1:
-                            c2perks = marinaperks[1]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 2:
-                            c2perks = marinaperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 3:
-                            c2perks = marinaperks[0]+"\n"+marinaperks[1]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 4:
-                            c2perks = marinaperks[0]+"\n"+marinaperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 5:
-                            c2perks = marinaperks[1]+"\n"+marinaperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if AAAA == 6:
-                            c2perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
-                            if perksc2 != "french_bread_gud":
-                                print(perksc2)
-                            else:
-                                print(c2perks)
-                        if perksc2 == "french_bread_gud":
-                            perksc2 = c2perks
-                        if c2perks != perksc2:
-                            c2perks = perksc2
-                    if c2 == "Paul":
-                        AAAA = random.randint(0, 6)
-                        if AAAA == 0:
-                            c1perks = paulperks[0]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c1perks)
-                        if AAAA == 1:
-                            c1perks = paulperks[1]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c1perks)
-                        if AAAA == 2:
-                            c1perks = paulperks[2]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c1perks)
-                        if AAAA == 3:
-                            c1perks = paulperks[0]+"\n"+paulperks[1]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c1perks)
-                        if AAAA == 4:
-                            c1perks = paulperks[0]+"\n"+paulperks[2]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c1perks)
-                        if AAAA == 5:
-                            c1perks = paulperks[1]+"\n"+paulperks[2]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c1perks)
-                        if AAAA == 6:
-                            c1perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
-                            if perksc1 != "french_bread_gud":
-                                print(perksc1)
-                            else:
-                                print(c1perks)
-                        if perksc1 == "french_bread_gud":
-                            perksc1 = c1perks
-                        if c1perks != perksc1:
-                            c1perks = perksc1
-                    if c1 == "Scorpius":
-                        c1perks = scorpiusperks
-                    if c1 == "Derpy":
-                        c1perks = derpyperks
-                    if c1 == "Jerry":
-                        c1perks = jerryperks
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c2perks = aatroxperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = aatroxperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = aatroxperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 3:
+                           c2perks = aatroxperks[0]+"\n"+aatroxperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 4:
+                           c2perks = aatroxperks[0]+"\n"+aatroxperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 5:
+                           c2perks = aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 6:
+                           c2perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if perksc2 == "french_bread_gud":
+                           perksc2 = c2perks
+                       if c2perks != perksc2:
+                           c2perks = perksc2
+                   if c2 == "Barry the Wizard":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c2perks = barryperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = barryperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = barryperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 3:
+                           c2perks = barryperks[0]+"\n"+barryperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 4:
+                           c2perks = barryperks[0]+"\n"+barryperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 5:
+                           c2perks = barryperks[1]+"\n"+barryperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 6:
+                           c2perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if perksc2 == "french_bread_gud":
+                           perksc2 = c2perks
+                       if c2perks != perksc2:
+                           c2perks = perksc2
+                   if c2 == "Diana":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c2perks = dianaperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = dianaperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = dianaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 3:
+                           c2perks = dianaperks[0]+"\n"+dianaperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 4:
+                           c2perks = dianaperks[0]+"\n"+dianaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 5:
+                           c2perks = dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 6:
+                           c2perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if perksc2 == "french_bread_gud":
+                           perksc2 = c2perks
+                       if c2perks != perksc2:
+                           c2perks = perksc2
+                   if c2 == "Diaz":
+                       AAAA = random.randint(0, 2)
+                       if AAAA == 0:
+                           c2perks = diazperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = diazperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = diazperks[0]+"\n"+diazperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                   if c2 == "Cole the Miner":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c2perks = coleperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = coleperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = coleperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 3:
+                           c2perks = coleperks[0]+"\n"+colwperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 4:
+                           c2perks = coleperks[0]+"\n"+coleperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 5:
+                           c2perks = coleperks[1]+"\n"+coleperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 6:
+                           c2perks =  coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if perksc2 == "french_bread_gud":
+                           perksc2 = c2perks
+                       if c2perks != perksc2:
+                           c2perks = perksc2
+                   if c2 == "Foxy":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c2perks = foxyperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = foxyperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = foxyperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 3:
+                           c2perks = foxyperks[0]+"\n"+foxyperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 4:
+                           c2perks = foxyperks[0]+"\n"+foxyperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 5:
+                           c2perks = foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 6:
+                           c2perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if perksc2 == "french_bread_gud":
+                           perksc2 = c2perks
+                       if c2perks != perksc2:
+                           c2perks = perksc2
+                   if c2 == "Marina":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c2perks = marinaperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = marinaperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = marinaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 3:
+                           c2perks = marinaperks[0]+"\n"+marinaperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 4:
+                           c2perks = marinaperks[0]+"\n"+marinaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 5:
+                           c2perks = marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 6:
+                           c2perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if perksc2 == "french_bread_gud":
+                           perksc2 = c2perks
+                       if c2perks != perksc2:
+                           c2perks = perksc2
+                   if c2 == "Paul":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c2perks = paulperks[0]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 1:
+                           c2perks = paulperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 2:
+                           c2perks = paulperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 3:
+                           c2perks = paulperks[0]+"\n"+paulperks[1]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 4:
+                           c2perks = paulperks[0]+"\n"+paulperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 5:
+                           c2perks = paulperks[1]+"\n"+paulperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if AAAA == 6:
+                           c2perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
+                           if perksc2 != "french_bread_gud":
+                               print(perksc2)
+                           else:
+                               print(c2perks)
+                       if perksc2 == "french_bread_gud":
+                           perksc2 = c2perks
+                       if c2perks != perksc2:
+                           c2perks = perksc2
+                   if c2 == "Scorpius":
+                       c2perks = scorpiusperks
+                   if c2 == "Derpy":
+                       c2perks = derpyperks
+                   if c2 == "Jerry":
+                       c2perks = jerryperks
                 if AAA == "3":
-                    print(c3perks)
+                    if c3 == "Aatrox":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c3perks = aatroxperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = aatroxperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = aatroxperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 3:
+                           c3perks = aatroxperks[0]+"\n"+aatroxperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 4:
+                           c3perks = aatroxperks[0]+"\n"+aatroxperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 5:
+                           c3perks = aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 6:
+                           c3perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if perksc3 == "french_bread_gud":
+                           perksc3 = c3perks
+                       if c3perks != perksc3:
+                           c3perks = perksc3
+                   if c3 == "Barry the Wizard":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c3perks = barryperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = barryperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = barryperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 3:
+                           c3perks = barryperks[0]+"\n"+barryperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 4:
+                           c3perks = barryperks[0]+"\n"+barryperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 5:
+                           c3perks = barryperks[1]+"\n"+barryperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 6:
+                           c3perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if perksc3 == "french_bread_gud":
+                           perksc3 = c3perks
+                       if c3perks != perksc3:
+                           c3perks = perksc3
+                   if c3 == "Diana":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c3perks = dianaperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = dianaperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = dianaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 3:
+                           c3perks = dianaperks[0]+"\n"+dianaperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 4:
+                           c3perks = dianaperks[0]+"\n"+dianaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 5:
+                           c3perks = dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 6:
+                           c3perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if perksc3 == "french_bread_gud":
+                           perksc3 = c3perks
+                       if c3perks != perksc3:
+                           c3perks = perksc3
+                   if c3 == "Diaz":
+                       AAAA = random.randint(0, 2)
+                       if AAAA == 0:
+                           c3perks = diazperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = diazperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = diazperks[0]+"\n"+diazperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                   if c3 == "Cole the Miner":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c3perks = coleperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = coleperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = coleperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 3:
+                           c3perks = coleperks[0]+"\n"+colwperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 4:
+                           c3perks = coleperks[0]+"\n"+coleperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 5:
+                           c3perks = coleperks[1]+"\n"+coleperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 6:
+                           c3perks =  coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if perksc3 == "french_bread_gud":
+                           perksc3 = c3perks
+                       if c3perks != perksc3:
+                           c3perks = perksc3
+                   if c3 == "Foxy":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c3perks = foxyperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = foxyperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = foxyperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 3:
+                           c3perks = foxyperks[0]+"\n"+foxyperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 4:
+                           c3perks = foxyperks[0]+"\n"+foxyperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 5:
+                           c3perks = foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 6:
+                           c3perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if perksc3 == "french_bread_gud":
+                           perksc3 = c3perks
+                       if c3perks != perksc3:
+                           c3perks = perksc3
+                   if c3 == "Marina":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c3perks = marinaperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = marinaperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = marinaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 3:
+                           c3perks = marinaperks[0]+"\n"+marinaperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 4:
+                           c3perks = marinaperks[0]+"\n"+marinaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 5:
+                           c3perks = marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 6:
+                           c3perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if perksc3 == "french_bread_gud":
+                           perksc3 = c3perks
+                       if c3perks != perksc3:
+                           c3perks = perksc3
+                   if c3 == "Paul":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c3perks = paulperks[0]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 1:
+                           c3perks = paulperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 2:
+                           c3perks = paulperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 3:
+                           c3perks = paulperks[0]+"\n"+paulperks[1]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 4:
+                           c3perks = paulperks[0]+"\n"+paulperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 5:
+                           c3perks = paulperks[1]+"\n"+paulperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if AAAA == 6:
+                           c3perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
+                           if perksc3 != "french_bread_gud":
+                               print(perksc3)
+                           else:
+                               print(c3perks)
+                       if perksc3 == "french_bread_gud":
+                           perksc3 = c3perks
+                       if c3perks != perksc3:
+                           c3perks = perksc3
+                   if c3 == "Scorpius":
+                       c3perks = scorpiusperks
+                   if c3 == "Derpy":
+                       c3perks = derpyperks
+                   if c3 == "Jerry":
+                       c3perks = jerryperks
                 if AAA == "4":
-                    print(c4perks)
+                    if c4 == "Aatrox":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c4perks = aatroxperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = aatroxperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = aatroxperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 3:
+                           c4perks = aatroxperks[0]+"\n"+aatroxperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 4:
+                           c4perks = aatroxperks[0]+"\n"+aatroxperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 5:
+                           c4perks = aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 6:
+                           c4perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if perksc4 == "french_bread_gud":
+                           perksc4 = c4perks
+                       if c4perks != perksc4:
+                           c4perks = perksc4
+                   if c4 == "Barry the Wizard":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c4perks = barryperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = barryperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = barryperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 3:
+                           c4perks = barryperks[0]+"\n"+barryperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 4:
+                           c4perks = barryperks[0]+"\n"+barryperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 5:
+                           c4perks = barryperks[1]+"\n"+barryperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 6:
+                           c4perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if perksc4 == "french_bread_gud":
+                           perksc4 = c4perks
+                       if c4perks != perksc4:
+                           c4perks = perksc4
+                   if c4 == "Diana":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c4perks = dianaperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = dianaperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = dianaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 3:
+                           c4perks = dianaperks[0]+"\n"+dianaperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 4:
+                           c4perks = dianaperks[0]+"\n"+dianaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 5:
+                           c4perks = dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 6:
+                           c4perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if perksc4 == "french_bread_gud":
+                           perksc4 = c4perks
+                       if c4perks != perksc4:
+                           c4perks = perksc4
+                   if c4 == "Diaz":
+                       AAAA = random.randint(0, 2)
+                       if AAAA == 0:
+                           c4perks = diazperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = diazperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = diazperks[0]+"\n"+diazperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                   if c4 == "Cole the Miner":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c4perks = coleperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = coleperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = coleperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 3:
+                           c4perks = coleperks[0]+"\n"+colwperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 4:
+                           c4perks = coleperks[0]+"\n"+coleperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 5:
+                           c4perks = coleperks[1]+"\n"+coleperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 6:
+                           c4perks =  coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if perksc4 == "french_bread_gud":
+                           perksc4 = c4perks
+                       if c4perks != perksc4:
+                           c4perks = perksc4
+                   if c4 == "Foxy":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c4perks = foxyperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = foxyperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = foxyperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 3:
+                           c4perks = foxyperks[0]+"\n"+foxyperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 4:
+                           c4perks = foxyperks[0]+"\n"+foxyperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 5:
+                           c4perks = foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 6:
+                           c4perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if perksc4 == "french_bread_gud":
+                           perksc4 = c4perks
+                       if c4perks != perksc4:
+                           c4perks = perksc4
+                   if c4 == "Marina":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c4perks = marinaperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = marinaperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = marinaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 3:
+                           c4perks = marinaperks[0]+"\n"+marinaperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 4:
+                           c4perks = marinaperks[0]+"\n"+marinaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 5:
+                           c4perks = marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 6:
+                           c4perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if perksc4 == "french_bread_gud":
+                           perksc4 = c4perks
+                       if c4perks != perksc4:
+                           c4perks = perksc4
+                   if c4 == "Paul":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c4perks = paulperks[0]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 1:
+                           c4perks = paulperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 2:
+                           c4perks = paulperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 3:
+                           c4perks = paulperks[0]+"\n"+paulperks[1]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 4:
+                           c4perks = paulperks[0]+"\n"+paulperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 5:
+                           c4perks = paulperks[1]+"\n"+paulperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if AAAA == 6:
+                           c4perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
+                           if perksc4 != "french_bread_gud":
+                               print(perksc4)
+                           else:
+                               print(c4perks)
+                       if perksc4 == "french_bread_gud":
+                           perksc4 = c4perks
+                       if c4perks != perksc4:
+                           c4perks = perksc4
+                   if c4 == "Scorpius":
+                       c4perks = scorpiusperks
+                   if c4 == "Derpy":
+                       c4perks = derpyperks
+                   if c4 == "Jerry":
+                       c4perks = jerryperks
                 if AAA == "5":
-                    print(c5perks)
+                    if c5 == "Aatrox":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c5perks = aatroxperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = aatroxperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = aatroxperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 3:
+                           c5perks = aatroxperks[0]+"\n"+aatroxperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 4:
+                           c5perks = aatroxperks[0]+"\n"+aatroxperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 5:
+                           c5perks = aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 6:
+                           c5perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if perksc5 == "french_bread_gud":
+                           perksc5 = c5perks
+                       if c5perks != perksc5:
+                           c5perks = perksc5
+                   if c5 == "Barry the Wizard":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c5perks = barryperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = barryperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = barryperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 3:
+                           c5perks = barryperks[0]+"\n"+barryperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 4:
+                           c5perks = barryperks[0]+"\n"+barryperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 5:
+                           c5perks = barryperks[1]+"\n"+barryperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 6:
+                           c5perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if perksc5 == "french_bread_gud":
+                           perksc5 = c5perks
+                       if c5perks != perksc5:
+                           c5perks = perksc5
+                   if c5 == "Diana":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c5perks = dianaperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = dianaperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = dianaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 3:
+                           c5perks = dianaperks[0]+"\n"+dianaperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 4:
+                           c5perks = dianaperks[0]+"\n"+dianaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 5:
+                           c5perks = dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 6:
+                           c5perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if perksc5 == "french_bread_gud":
+                           perksc5 = c5perks
+                       if c5perks != perksc5:
+                           c5perks = perksc5
+                   if c5 == "Diaz":
+                       AAAA = random.randint(0, 2)
+                       if AAAA == 0:
+                           c5perks = diazperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = diazperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = diazperks[0]+"\n"+diazperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                   if c5 == "Cole the Miner":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c5perks = coleperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = coleperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = coleperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 3:
+                           c5perks = coleperks[0]+"\n"+colwperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 4:
+                           c5perks = coleperks[0]+"\n"+coleperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 5:
+                           c5perks = coleperks[1]+"\n"+coleperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 6:
+                           c5perks =  coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if perksc5 == "french_bread_gud":
+                           perksc5 = c5perks
+                       if c5perks != perksc5:
+                           c5perks = perksc5
+                   if c5 == "Foxy":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c5perks = foxyperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = foxyperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = foxyperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 3:
+                           c5perks = foxyperks[0]+"\n"+foxyperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 4:
+                           c5perks = foxyperks[0]+"\n"+foxyperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 5:
+                           c5perks = foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 6:
+                           c5perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if perksc5 == "french_bread_gud":
+                           perksc5 = c5perks
+                       if c5perks != perksc5:
+                           c5perks = perksc5
+                   if c5 == "Marina":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c5perks = marinaperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = marinaperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = marinaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 3:
+                           c5perks = marinaperks[0]+"\n"+marinaperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 4:
+                           c5perks = marinaperks[0]+"\n"+marinaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 5:
+                           c5perks = marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 6:
+                           c5perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if perksc5 == "french_bread_gud":
+                           perksc5 = c5perks
+                       if c5perks != perksc5:
+                           c5perks = perksc5
+                   if c5 == "Paul":
+                       AAAA = random.randint(0, 6)
+                       if AAAA == 0:
+                           c5perks = paulperks[0]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 1:
+                           c5perks = paulperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 2:
+                           c5perks = paulperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 3:
+                           c5perks = paulperks[0]+"\n"+paulperks[1]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 4:
+                           c5perks = paulperks[0]+"\n"+paulperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 5:
+                           c5perks = paulperks[1]+"\n"+paulperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if AAAA == 6:
+                           c5perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
+                           if perksc5 != "french_bread_gud":
+                               print(perksc5)
+                           else:
+                               print(c5perks)
+                       if perksc5 == "french_bread_gud":
+                           perksc5 = c5perks
+                       if c5perks != perksc5:
+                           c5perks = perksc5
+                   if c5 == "Scorpius":
+                       c5perks = scorpiusperks
+                   if c5 == "Derpy":
+                       c5perks = derpyperks
+                   if c5 == "Jerry":
+                       c5perks = jerryperks
             if AA == "candidates":
                 print("The current candidates are:", c1+",", c2+",", c3+",", c4+",", "and "+c5)
         if voteNow == True:
