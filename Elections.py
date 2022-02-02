@@ -1,4 +1,5 @@
 import random
+from Stats Overhaul.py import all
 print("Hi Some of the features are still in the WIP phase, meaning that if something says '(WIP)' it means that it is not implemented into the game yet. Have fun, stay safe, and remember to update!")
 mc1 = 0
 mc2 = 0
@@ -25,6 +26,8 @@ c4perks = "None"
 perksc4 = "french_bread_gud"
 c5perks = "None"
 perksc5 = "french_bread_gud"
+perksm = "french_bread_gud"
+tempperksm = "french_bread_gud"
 aatroxperks = ("1. Slayer XP Buff: Earn 25% more Slayer XP.", "2. Pathfinder: Gain rare drops 20% more often.", "3. SLASHED Pricing: Starting Slayer quests is half price.")
 barryperks = ("1. Magic XP Boost: Gain 15% more Enchanting and  Alchemy XP.", "2. Arcane Catalyst: Spells deal 15% increased damage.", "3. Astral Negotiator: Enchanting and anvils costs -15% less experience.")
 coleperks = ("1. Mining XP Buff: Earn 1.5x Mining experience", "2. Prospection: Mining minions work 25% faster.(minions are a WIP)", "3. Mining Fiesta: Starts a special event in Early Autumn. Earn 1.5x Mining exp, 2x drops and Unique Loot. Active only on public islands.(WIP, when added it should compound with perk no.1)")
@@ -65,12 +68,33 @@ def mayorElectionReset():
     perksc4 = "french_bread_gud"
     c5perks = "None"
     perksc5 = "french_bread_gud"
+    tempperksm = "french_bread_gud"
 mayors = ["Aatrox", "Barry the Wizard", "Cole the Miner", "Diana", "Diaz", "Foxy", "Marina", " Paul"]
 smayors = ["Jerry", "Derpy", "Scorpius"]
 smayor = "Nancy"
 cmayor = "None"
 game = "run"
 while (game == "run"):
+    if aatroxperks(0) in perksm:
+        slayerXpMod = 1.25
+    if aatroxperks(1) in perksm:
+        magicFind = magicFind + 20
+    if aatroxperks(2) in perksm:
+        slayerSPM = 0.5
+    if barryperks(0) in perksm:
+        alchXpMod = 1.15
+        enchantXpMod = 1.15
+    if barryperks(1) in perksm:
+        magicDamMod = 1.15
+    if barryperks(2) in perksm:
+        echantXpCost = 0.85 
+        anvilXpCost = 0.85
+    if coleperks(0) in perksm:
+        miningXpMod += 1.5
+    if coleperks(1) in perksm:
+        print("Whoops This feature is still a WIP!(minions might not be added)")
+    if coleperks(2) in perksm:
+        
     a = input("What u wanna do? ")
     if a == "vote":
         if smayor != 0:
@@ -1979,6 +2003,8 @@ while (game == "run"):
                         smayor = 0
                     cml = 0
                     voteNow = False
+                    tempperksm = c1perks
+                    perksm = tempperksm
                     continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
@@ -1991,6 +2017,8 @@ while (game == "run"):
                         smayor = 0
                     cml = 0
                     voteNow = False
+                    tempperksm = c2perks
+                    perksm = tempperksm
                     continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
@@ -2003,6 +2031,8 @@ while (game == "run"):
                         smayor = 0
                     cml = 0
                     voteNow = False
+                    tempperksm = c3perks
+                    perksm = tempperksm
                     continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
@@ -2015,6 +2045,8 @@ while (game == "run"):
                         smayor = 0
                     cml = 0
                     voteNow = False
+                    tempperksm = c4perks
+                    perksm = tempperksm
                     continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
@@ -2027,6 +2059,8 @@ while (game == "run"):
                         smayor = 0
                     cml = 0
                     voteNow = False
+                    tempperksm = c5perks
+                    perksm = tempperksm
                     continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
