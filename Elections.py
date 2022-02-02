@@ -141,7 +141,6 @@ while (game == "run"):
                     aa = random.randint(0, 7)
             mc5 = aa
             c5 = mayors[mc5]
-        c1 = "Aatrox"
         print("The current candidates are:", c1+",", c2+",", c3+",", c4+",", "and "+c5)
         candidates = c1 + c2 + c3 + c4 + c5
         pVoteConfirm = True
@@ -149,6 +148,7 @@ while (game == "run"):
             AA = input("What will you do in the election.(valid responses are: 'vote', 'see perks', and 'candidates' if you choose 'vote' you will be forced to vote) ")
             if AA == "vote":
                 voteNow = True
+                break
             if AA == "see perks":
                 AAA = input("Whos perks do you wish to see?(enter number corresponding to the candidate that you wish to see)")
                 if AAA == "1":
@@ -337,7 +337,7 @@ while (game == "run"):
                             else:
                                 print(c1perks)
                         if AAAA == 3:
-                            c1perks = coleperks[0]+"\n"+colwperks[1]
+                            c1perks = coleperks[0]+"\n"+coleperks[1]
                             if perksc1 != "french_bread_gud":
                                 print(perksc1)
                             else:
@@ -563,7 +563,7 @@ while (game == "run"):
                            perksc2 = c2perks
                        if c2perks != perksc2:
                            c2perks = perksc2
-                   if c2 == "Barry the Wizard":
+                    if c2 == "Barry the Wizard":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c2perks = barryperks[0]
@@ -611,7 +611,7 @@ while (game == "run"):
                            perksc2 = c2perks
                        if c2perks != perksc2:
                            c2perks = perksc2
-                   if c2 == "Diana":
+                    if c2 == "Diana":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c2perks = dianaperks[0]
@@ -659,7 +659,7 @@ while (game == "run"):
                            perksc2 = c2perks
                        if c2perks != perksc2:
                            c2perks = perksc2
-                   if c2 == "Diaz":
+                    if c2 == "Diaz":
                        AAAA = random.randint(0, 2)
                        if AAAA == 0:
                            c2perks = diazperks[0]
@@ -679,7 +679,7 @@ while (game == "run"):
                                print(perksc2)
                            else:
                                print(c2perks)
-                   if c2 == "Cole the Miner":
+                    if c2 == "Cole the Miner":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c2perks = coleperks[0]
@@ -700,7 +700,7 @@ while (game == "run"):
                            else:
                                print(c2perks)
                        if AAAA == 3:
-                           c2perks = coleperks[0]+"\n"+colwperks[1]
+                           c2perks = coleperks[0]+"\n"+coleperks[1]
                            if perksc2 != "french_bread_gud":
                                print(perksc2)
                            else:
@@ -727,7 +727,7 @@ while (game == "run"):
                            perksc2 = c2perks
                        if c2perks != perksc2:
                            c2perks = perksc2
-                   if c2 == "Foxy":
+                    if c2 == "Foxy":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c2perks = foxyperks[0]
@@ -775,7 +775,7 @@ while (game == "run"):
                            perksc2 = c2perks
                        if c2perks != perksc2:
                            c2perks = perksc2
-                   if c2 == "Marina":
+                    if c2 == "Marina":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c2perks = marinaperks[0]
@@ -823,7 +823,7 @@ while (game == "run"):
                            perksc2 = c2perks
                        if c2perks != perksc2:
                            c2perks = perksc2
-                   if c2 == "Paul":
+                    if c2 == "Paul":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c2perks = paulperks[0]
@@ -871,11 +871,11 @@ while (game == "run"):
                            perksc2 = c2perks
                        if c2perks != perksc2:
                            c2perks = perksc2
-                   if c2 == "Scorpius":
+                    if c2 == "Scorpius":
                        c2perks = scorpiusperks
-                   if c2 == "Derpy":
+                    if c2 == "Derpy":
                        c2perks = derpyperks
-                   if c2 == "Jerry":
+                    if c2 == "Jerry":
                        c2perks = jerryperks
                 if AAA == "3":
                     if c3 == "Aatrox":
@@ -926,7 +926,7 @@ while (game == "run"):
                            perksc3 = c3perks
                        if c3perks != perksc3:
                            c3perks = perksc3
-                   if c3 == "Barry the Wizard":
+                    if c3 == "Barry the Wizard":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c3perks = barryperks[0]
@@ -974,7 +974,7 @@ while (game == "run"):
                            perksc3 = c3perks
                        if c3perks != perksc3:
                            c3perks = perksc3
-                   if c3 == "Diana":
+                    if c3 == "Diana":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c3perks = dianaperks[0]
@@ -1022,7 +1022,7 @@ while (game == "run"):
                            perksc3 = c3perks
                        if c3perks != perksc3:
                            c3perks = perksc3
-                   if c3 == "Diaz":
+                    if c3 == "Diaz":
                        AAAA = random.randint(0, 2)
                        if AAAA == 0:
                            c3perks = diazperks[0]
@@ -1042,7 +1042,7 @@ while (game == "run"):
                                print(perksc3)
                            else:
                                print(c3perks)
-                   if c3 == "Cole the Miner":
+                    if c3 == "Cole the Miner":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c3perks = coleperks[0]
@@ -1063,7 +1063,7 @@ while (game == "run"):
                            else:
                                print(c3perks)
                        if AAAA == 3:
-                           c3perks = coleperks[0]+"\n"+colwperks[1]
+                           c3perks = coleperks[0]+"\n"+coleperks[1]
                            if perksc3 != "french_bread_gud":
                                print(perksc3)
                            else:
@@ -1090,7 +1090,7 @@ while (game == "run"):
                            perksc3 = c3perks
                        if c3perks != perksc3:
                            c3perks = perksc3
-                   if c3 == "Foxy":
+                    if c3 == "Foxy":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c3perks = foxyperks[0]
@@ -1138,7 +1138,7 @@ while (game == "run"):
                            perksc3 = c3perks
                        if c3perks != perksc3:
                            c3perks = perksc3
-                   if c3 == "Marina":
+                    if c3 == "Marina":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c3perks = marinaperks[0]
@@ -1186,7 +1186,7 @@ while (game == "run"):
                            perksc3 = c3perks
                        if c3perks != perksc3:
                            c3perks = perksc3
-                   if c3 == "Paul":
+                    if c3 == "Paul":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c3perks = paulperks[0]
@@ -1234,11 +1234,11 @@ while (game == "run"):
                            perksc3 = c3perks
                        if c3perks != perksc3:
                            c3perks = perksc3
-                   if c3 == "Scorpius":
+                    if c3 == "Scorpius":
                        c3perks = scorpiusperks
-                   if c3 == "Derpy":
+                    if c3 == "Derpy":
                        c3perks = derpyperks
-                   if c3 == "Jerry":
+                    if c3 == "Jerry":
                        c3perks = jerryperks
                 if AAA == "4":
                     if c4 == "Aatrox":
@@ -1289,7 +1289,7 @@ while (game == "run"):
                            perksc4 = c4perks
                        if c4perks != perksc4:
                            c4perks = perksc4
-                   if c4 == "Barry the Wizard":
+                    if c4 == "Barry the Wizard":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c4perks = barryperks[0]
@@ -1337,7 +1337,7 @@ while (game == "run"):
                            perksc4 = c4perks
                        if c4perks != perksc4:
                            c4perks = perksc4
-                   if c4 == "Diana":
+                    if c4 == "Diana":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c4perks = dianaperks[0]
@@ -1385,7 +1385,7 @@ while (game == "run"):
                            perksc4 = c4perks
                        if c4perks != perksc4:
                            c4perks = perksc4
-                   if c4 == "Diaz":
+                    if c4 == "Diaz":
                        AAAA = random.randint(0, 2)
                        if AAAA == 0:
                            c4perks = diazperks[0]
@@ -1405,7 +1405,7 @@ while (game == "run"):
                                print(perksc4)
                            else:
                                print(c4perks)
-                   if c4 == "Cole the Miner":
+                    if c4 == "Cole the Miner":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c4perks = coleperks[0]
@@ -1426,7 +1426,7 @@ while (game == "run"):
                            else:
                                print(c4perks)
                        if AAAA == 3:
-                           c4perks = coleperks[0]+"\n"+colwperks[1]
+                           c4perks = coleperks[0]+"\n"+coleperks[1]
                            if perksc4 != "french_bread_gud":
                                print(perksc4)
                            else:
@@ -1453,7 +1453,7 @@ while (game == "run"):
                            perksc4 = c4perks
                        if c4perks != perksc4:
                            c4perks = perksc4
-                   if c4 == "Foxy":
+                    if c4 == "Foxy":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c4perks = foxyperks[0]
@@ -1501,7 +1501,7 @@ while (game == "run"):
                            perksc4 = c4perks
                        if c4perks != perksc4:
                            c4perks = perksc4
-                   if c4 == "Marina":
+                    if c4 == "Marina":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c4perks = marinaperks[0]
@@ -1549,7 +1549,7 @@ while (game == "run"):
                            perksc4 = c4perks
                        if c4perks != perksc4:
                            c4perks = perksc4
-                   if c4 == "Paul":
+                    if c4 == "Paul":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c4perks = paulperks[0]
@@ -1597,11 +1597,11 @@ while (game == "run"):
                            perksc4 = c4perks
                        if c4perks != perksc4:
                            c4perks = perksc4
-                   if c4 == "Scorpius":
+                    if c4 == "Scorpius":
                        c4perks = scorpiusperks
-                   if c4 == "Derpy":
+                    if c4 == "Derpy":
                        c4perks = derpyperks
-                   if c4 == "Jerry":
+                    if c4 == "Jerry":
                        c4perks = jerryperks
                 if AAA == "5":
                     if c5 == "Aatrox":
@@ -1652,7 +1652,7 @@ while (game == "run"):
                            perksc5 = c5perks
                        if c5perks != perksc5:
                            c5perks = perksc5
-                   if c5 == "Barry the Wizard":
+                    if c5 == "Barry the Wizard":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c5perks = barryperks[0]
@@ -1700,7 +1700,7 @@ while (game == "run"):
                            perksc5 = c5perks
                        if c5perks != perksc5:
                            c5perks = perksc5
-                   if c5 == "Diana":
+                    if c5 == "Diana":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c5perks = dianaperks[0]
@@ -1748,7 +1748,7 @@ while (game == "run"):
                            perksc5 = c5perks
                        if c5perks != perksc5:
                            c5perks = perksc5
-                   if c5 == "Diaz":
+                    if c5 == "Diaz":
                        AAAA = random.randint(0, 2)
                        if AAAA == 0:
                            c5perks = diazperks[0]
@@ -1768,7 +1768,7 @@ while (game == "run"):
                                print(perksc5)
                            else:
                                print(c5perks)
-                   if c5 == "Cole the Miner":
+                    if c5 == "Cole the Miner":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c5perks = coleperks[0]
@@ -1789,7 +1789,7 @@ while (game == "run"):
                            else:
                                print(c5perks)
                        if AAAA == 3:
-                           c5perks = coleperks[0]+"\n"+colwperks[1]
+                           c5perks = coleperks[0]+"\n"+coleperks[1]
                            if perksc5 != "french_bread_gud":
                                print(perksc5)
                            else:
@@ -1816,7 +1816,7 @@ while (game == "run"):
                            perksc5 = c5perks
                        if c5perks != perksc5:
                            c5perks = perksc5
-                   if c5 == "Foxy":
+                    if c5 == "Foxy":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c5perks = foxyperks[0]
@@ -1864,7 +1864,7 @@ while (game == "run"):
                            perksc5 = c5perks
                        if c5perks != perksc5:
                            c5perks = perksc5
-                   if c5 == "Marina":
+                    if c5 == "Marina":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c5perks = marinaperks[0]
@@ -1912,7 +1912,7 @@ while (game == "run"):
                            perksc5 = c5perks
                        if c5perks != perksc5:
                            c5perks = perksc5
-                   if c5 == "Paul":
+                    if c5 == "Paul":
                        AAAA = random.randint(0, 6)
                        if AAAA == 0:
                            c5perks = paulperks[0]
@@ -1960,17 +1960,15 @@ while (game == "run"):
                            perksc5 = c5perks
                        if c5perks != perksc5:
                            c5perks = perksc5
-                   if c5 == "Scorpius":
+                    if c5 == "Scorpius":
                        c5perks = scorpiusperks
-                   if c5 == "Derpy":
+                    if c5 == "Derpy":
                        c5perks = derpyperks
-                   if c5 == "Jerry":
+                    if c5 == "Jerry":
                        c5perks = jerryperks
             if AA == "candidates":
                 print("The current candidates are:", c1+",", c2+",", c3+",", c4+",", "and "+c5)
-        if voteNow == True:
-            cml = 1
-        while cml == 1:
+        while voteNow == 1:
             aaaa = input("Who would you like to vote for? (just use a number from 1 to 5 corresponding to the mayor you want to vote for) ")
             if aaaa == "1":
                 A = input("Are you sure you wish to vote for "+c1+"?")
@@ -2032,7 +2030,7 @@ while (game == "run"):
                     continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
-            if (aaaa != "1" or aaaa != "2" or aaaa != "3" or aaaa != "4" or aaaa != "5" & cml != 0 & voteNow != false):
+            if (aaaa != "1" or aaaa != "2" or aaaa != "3" or aaaa != "4" or aaaa != "5" & cml != 0 & voteNow != False):
                     print("Im sorry i didn't get that can you please say it again?")
         mayorElectionReset()
     if a == "check mayor":
