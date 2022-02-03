@@ -1,5 +1,4 @@
 import random
-from Stats Overhaul.py import all
 print("Hi Some of the features are still in the WIP phase, meaning that if something says '(WIP)' it means that it is not implemented into the game yet. Have fun, stay safe, and remember to update!")
 mc1 = 0
 mc2 = 0
@@ -28,15 +27,15 @@ c5perks = "None"
 perksc5 = "french_bread_gud"
 perksm = "french_bread_gud"
 tempperksm = "french_bread_gud"
-aatroxperks = ("1. Slayer XP Buff: Earn 25% more Slayer XP.", "2. Pathfinder: Gain rare drops 20% more often.", "3. SLASHED Pricing: Starting Slayer quests is half price.")
-barryperks = ("1. Magic XP Boost: Gain 15% more Enchanting and  Alchemy XP.", "2. Arcane Catalyst: Spells deal 15% increased damage.", "3. Astral Negotiator: Enchanting and anvils costs -15% less experience.")
-coleperks = ("1. Mining XP Buff: Earn 1.5x Mining experience", "2. Prospection: Mining minions work 25% faster.(minions are a WIP)", "3. Mining Fiesta: Starts a special event in Early Autumn. Earn 1.5x Mining exp, 2x drops and Unique Loot. Active only on public islands.(WIP, when added it should compound with perk no.1)")
+aatroxperks = ["1. Slayer XP Buff: Earn 25% more Slayer XP.", "2. Pathfinder: Gain rare drops 20% more often.", "3. SLASHED Pricing: Starting Slayer quests is half price."]
+barryperks = ["1. Magic XP Boost: Gain 15% more Enchanting and  Alchemy XP.", "2. Arcane Catalyst: Spells deal 15% increased damage.", "3. Astral Negotiator: Enchanting and anvils costs -15% less experience."]
+coleperks = ["1. Mining XP Buff: Earn 1.5x Mining experience", "2. Prospection: Mining minions work 25% faster.(minions are a WIP)", "3. Mining Fiesta: Starts a special event in Early Autumn. Earn 1.5x Mining exp, 2x drops and Unique Loot. Active only on public islands.(WIP, when added it should compound with perk no.1)"]
 scorpiusperks = "1.Bribe: If Scorpius wins and you voted for him, Mayor Scorpius will offer you 1,000,000 coins as a token of grattitude.\n2. Darker Auctions: Scorpius will intrude in Dark Auctions, increasing the number of rounds to 7 and offering special items.(WIP)"
-dianaperks = ("1. Pet XP Buff: Gain 35% more pet XP.", "2. Lucky!: Gain +25 Pet Luck(Pets are WIP)", "3. Mythological Ritual: Mayor Diana will sell the Griffin Pet, which lets you find Mythological Creatures and tons of unique items.(WIP)")
-diazperks = ("1. Barrier Street: Gain 25% more bank interest.(WIP)", "2. Shopping Spree: Increase daily NPC buy limits by 10x.(WIP)")
-foxyperks = ("1. Sweet Tooth: Grants +20% chance to get candy from mobs during the Spooky Festival.(WIP)", "2. Benevolence: Gain 2.5x gifts from the attack on Jerry's Workshop.(WIP)", "3. Extra Event: Schedules an extra event during the year.(WIP)")
-marinaperks = ("1. Fishing XP Buff: Gain 50% more fishing XP", "2. Luck of the Sea 2.0: Gain +15 Sea Creature Chance.", "3. Fishing Festival: Start a special fishing event during the first 3 days of each month! Fish and fight dangerous Sharks and earn unique Shark loot.")
-paulperks = ("1. EZPZ: Gain 10 extra bonus score in Dungeons.(WIP)", "2. Marauder: Dungeon reward chests are 20% cheaper.(WIP)", "3. Benediction: Blessings are 25% stronger.(WIP)")
+dianaperks = ["1. Pet XP Buff: Gain 35% more pet XP.", "2. Lucky!: Gain +25 Pet Luck(Pets are WIP)", "3. Mythological Ritual: Mayor Diana will sell the Griffin Pet, which lets you find Mythological Creatures and tons of unique items.(WIP)"]
+diazperks = ["1. Barrier Street: Gain 25% more bank interest.(WIP)", "2. Shopping Spree: Increase daily NPC buy limits by 10x.(WIP)"]
+foxyperks = ["1. Sweet Tooth: Grants +20% chance to get candy from mobs during the Spooky Festival.(WIP)", "2. Benevolence: Gain 2.5x gifts from the attack on Jerry's Workshop.(WIP)", "3. Extra Event: Schedules an extra event during the year.(WIP)"]
+marinaperks = ["1. Fishing XP Buff: Gain 50% more fishing XP", "2. Luck of the Sea 2.0: Gain +15 Sea Creature Chance.", "3. Fishing Festival: Start a special fishing event during the first 3 days of each month! Fish and fight dangerous Sharks and earn unique Shark loot."]
+paulperks = ["1. EZPZ: Gain 10 extra bonus score in Dungeons.(WIP)", "2. Marauder: Dungeon reward chests are 20% cheaper.(WIP)", "3. Benediction: Blessings are 25% stronger.(WIP)"]
 derpyperks = "1. TURBO MINIONS!!!: Minions have double the output! \n2. AH CLOSED!!!: The Auction House will be closed while Derpy is elected!\n3. DOUBLE MOBS HP!!!: ALL monsters have double health!\n 4. MOAR SKILLZ!!!: Gain +50% more skill experience!(All of derpy's perks are a WIP)"
 jerryperks = "1. Perkpocalypse: Activates all perks of another mayor every 18 SkyBlock days (6 hours).\n2. Statspocalypse: Increases all stats by 10%.\n3. Jerrypocalypse: Reveal hidden Jerries from logging, farming, mining, and killing mobs.(Perks 1 and 3 are a WIP)"
 def mayorElectionReset():
@@ -75,26 +74,29 @@ smayor = "Nancy"
 cmayor = "None"
 game = "run"
 while (game == "run"):
-    if aatroxperks(0) in perksm:
+    if aatroxperks[0] in perksm:
         slayerXpMod = 1.25
-    if aatroxperks(1) in perksm:
+        print("aatrox's first perk")
+    if aatroxperks[1] in perksm:
         magicFind = magicFind + 20
-    if aatroxperks(2) in perksm:
+        print("aatrox's 2nd perk")
+    if aatroxperks[2] in perksm:
         slayerSPM = 0.5
-    if barryperks(0) in perksm:
+        print("aatrox's 3rd perk")
+    if barryperks[0] in perksm:
         alchXpMod = 1.15
         enchantXpMod = 1.15
-    if barryperks(1) in perksm:
+    if barryperks[1] in perksm:
         magicDamMod = 1.15
-    if barryperks(2) in perksm:
+    if barryperks[2] in perksm:
         echantXpCost = 0.85 
         anvilXpCost = 0.85
-    if coleperks(0) in perksm:
+    if coleperks[0] in perksm:
         miningXpMod += 1.5
-    if coleperks(1) in perksm:
+    if coleperks[1] in perksm:
         print("Whoops This feature is still a WIP!(minions might not be added)")
-    if coleperks(2) in perksm:
-        
+    if coleperks[2] in perksm:
+        pass
     a = input("What u wanna do? ")
     if a == "vote":
         if smayor != 0:
@@ -2001,11 +2003,10 @@ while (game == "run"):
                     cmayor = c1
                     if smayor != 0:
                         smayor = 0
-                    cml = 0
+                    cml = 1
                     voteNow = False
                     tempperksm = c1perks
                     perksm = tempperksm
-                    continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "2":
@@ -2015,11 +2016,10 @@ while (game == "run"):
                     cmayor = c2
                     if smayor != 0:
                         smayor = 0
-                    cml = 0
+                    cml = 1
                     voteNow = False
                     tempperksm = c2perks
                     perksm = tempperksm
-                    continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "3":
@@ -2029,11 +2029,10 @@ while (game == "run"):
                     cmayor = c3
                     if smayor != 0:
                         smayor = 0
-                    cml = 0
+                    cml = 1
                     voteNow = False
                     tempperksm = c3perks
                     perksm = tempperksm
-                    continue
                 if A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "4":
@@ -2043,12 +2042,13 @@ while (game == "run"):
                     cmayor = c4
                     if smayor != 0:
                         smayor = 0
-                    cml = 0
+                    cml = 1
                     voteNow = False
-                    tempperksm = c4perks
-                    perksm = tempperksm
-                    continue
-                if A == "no":
+                    if perksc4 != "french_bread_gud":
+                        tempperksm = perksc4
+                    else:
+                        tempperksm = c4perks
+                elif A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "5":
                 A = input("Are you sure you wish to vote for "+c5+"?")
@@ -2057,12 +2057,15 @@ while (game == "run"):
                     cmayor = c5
                     if smayor != 0:
                         smayor = 0
-                    cml = 0
+                    cml = 1
                     voteNow = False
-                    tempperksm = c5perks
+                    if perksc5 != "french_bread_gud":
+                        tempperksm = perksc5
+                    else:
+                        tempperksm = c5perks
                     perksm = tempperksm
                     continue
-                if A == "no":
+                elif A == "no":
                     print("Please choose a mayor to vote for.")
             if (aaaa != "1" or aaaa != "2" or aaaa != "3" or aaaa != "4" or aaaa != "5" & cml != 0 & voteNow != False):
                     print("Im sorry i didn't get that can you please say it again?")
@@ -2072,3 +2075,6 @@ while (game == "run"):
             print("The current mayor is "+smayor)
         else:
             print("The current mayor is "+cmayor)
+    if a == "see perks":
+        print(perksm)
+        print("This is the tempperksm variable speaking tempperksm is equal to "+tempperksm)
