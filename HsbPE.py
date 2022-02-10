@@ -134,7 +134,7 @@ while(gameworks==1):
       coins = fibsh*100
       fibsh = 0
       gtime=gtime+1
-      print("you now have", coins, "coin(s)"
+      print("you now have", coins, "coin(s)")
    elif A == "+100 gtime":
       gtime=gtime+100
    elif A == "check gtime":
@@ -209,16 +209,20 @@ you also lose half of your coins, what a noob""")
                   print("you died L you lost half your coins")
                   coins=coins/2
                   gtime=gtime+1
-   if A == "do slayers":
-         Az = input("What slayer do you want to do")
-         if Az == "Rev":
-               Ar = input("Which level do you want to do?"
-                          if Ar == "1":
-                                print
-                          if Ar == "2":
-                          if Ar == "3":
-                          if Ar == "4":
-                          if Ar == "5":
+  # if A == "do slayers":
+  #       Az = input("What slayer do you want to do")
+  #       if Az == "Rev":
+  #             Ar = str(input("Which level do you want to do?")
+  #             if Ar == "1":
+  #               print("very well")
+  #             elif Ar == "2":
+  #               pass
+  #             elif Ar == "3":
+  #               pass
+  #             elif Ar == "4":
+  #               pass
+  #             elif Ar == "5":
+  #               pass
    if A == "combat level up":
       cxp=cxp+1000
    if A == "fibsh level up":
