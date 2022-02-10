@@ -1,4 +1,5 @@
 import random
+import StatsOverhaul
 print("Hi Some of the features are still in the WIP phase, meaning that if something says '(WIP)' it means that it is not implemented into the game yet. Have fun, stay safe, and remember to update!")
 mc1 = 0
 mc2 = 0
@@ -15,6 +16,7 @@ smc2 = 0
 smc3 = 0
 cml = 0
 voteNow = False
+slayerXpMod = 1
 c1perks = "None"
 perksc1 = "french_bread_gud"
 c2perks = "None"
@@ -68,6 +70,7 @@ def mayorElectionReset():
     c5perks = "None"
     perksc5 = "french_bread_gud"
     tempperksm = "french_bread_gud"
+    slayerXpMod = 1
 mayors = ["Aatrox", "Barry the Wizard", "Cole the Miner", "Diana", "Diaz", "Foxy", "Marina", " Paul"]
 smayors = ["Jerry", "Derpy", "Scorpius"]
 smayor = "Nancy"
@@ -98,6 +101,8 @@ while (game == "run"):
     if coleperks[2] in perksm:
         pass
     a = input("What u wanna do? ")
+    if a == "Stop" or a == "exit" or a == "Exit" or a == "stop":
+      game = "stopped"
     if a == "vote":
         if smayor != 0:
             print("The current mayor is", smayor)
