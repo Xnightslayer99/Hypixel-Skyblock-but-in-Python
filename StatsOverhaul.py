@@ -1,17 +1,32 @@
 import random
 import string
 global GameRunAllow
-pname = str(input("What do you wish to be called?(This cannot be changed later)"))
-if pname == "exit":
-  GameRunAllow = False
+cheatCodes = ["SK!ULT", "SQTQQTXVX"]
+chooseName = True
+while chooseName == True:
+  pname = str(input("What do you wish to be called?(This cannot be changed later)"))
+  if pname in cheatCodes:
+    print("Cheat Code discovered!")
+    if pname == cheatCodes[0] or pname == cheatCodes[1]:
+      infhp = True
+      def sethp():
+        if infhp == True:
+          hp = -1
+          maxhp = -1
+        else:
+          hp = 100
+          maxhp = 100
+  if pname not in cheatCodes:
+    break
+  if pname == "exit":
+    GameRunAllow = False
 damsys = input("Would you like to use the old or the new Damage system?(old = before strength nerf and new = after strength nerf [cannot be changed])")
 GameRunAllow = False
 name = pname
 stre = 0
 cc = 30
 cd = 50
-hp = 100
-maxhp = 100
+sethp()
 defence = 0
 fero = 0
 scc = 20
@@ -53,11 +68,34 @@ while(GameRunAllow == True):
     elif A == "uuddlrlrba":
       print("Cheat Code discovered!")
       cheatMode = True
-      a = input("What stat do you wish to change? ")
-      if a == "strength":
-        aa = int(input("Please choose a number to change it to: "))
-        stre = aa
-      if a == ""
+      while cheatMode == True:
+        a = input("What stat do you wish to change? ")
+        if a == "strength":
+          b = True
+          while b == True:
+            try:
+                aa = input("What would you like to change it to? ")
+                if type(aa) == str:
+                    aa = float(aa)
+                if isinstance(aa, float) == True:
+                    stre = aa
+                    print("Damage multiplier has been "+f"changed to {stre}")
+                    break
+            except:
+                print("That is not a valid number")
+        if a == "damage multiplier":
+          b = True
+          while b == True:
+            try:
+                aa = input("What would you like to change it to? ")
+                if type(aa) == str:
+                    aa = float(aa)
+                if isinstance(aa, float) == True:
+                    dammul = aa
+                    print("Damage multiplier has been "+f"changed to {dammul}")
+                    break
+            except:
+                print("That is not a valid number")
     if A == "exit":
       GameRunAllow == False
       break
