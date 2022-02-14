@@ -309,7 +309,7 @@ you also lose half of your coins, what a noob""")
    if A == "check farming stat multiplier":
       print(fasm)
    if A == "check farming lvl":
-      print(facsl)
+      print(faslxp)
    if A == "check farming xp left":
       print(((fasl+1)*1000)-faxp)
    if cm == 3:
@@ -914,20 +914,20 @@ uc=0
 ul=0
 ub=0
 if(gameworks==2):
-   AC = input("What class do you choose(Archer, Warrior, Mage, Assassin, or Shaman)[this is case sensitive]")
-   if AC == "Archer":
+   AC = input("What class do you choose(Archer, Warrior, Mage, Assassin, or Shaman)[this is case sensitive, or alternatively you can use numbers corresponding to the class ie 1 for archer, 2 for warrior ect ect.]")
+   if AC == "Archer" or AC == 1:
          print("Archer class has been selected")
          cc = "Archer"
-   if AC == "Warrior":
+   if AC == "Warrior" or AC == 2:
          print("Warrior class has been selected")
          cc = "warrior"
-   if AC == "Mage":
+   if AC == "Mage" or AC == 3:
          print("Mage class has been selected")
          cc = "Mage"
-   if AC == "Assassin":
+   if AC == "Assassin" or AC == 4:
          print("Assassin class has been selected")
          cc = "Assassin"
-   if AC == "Shaman":
+   if AC == "Shaman" or AC == 5:
          print("Shaman class has been selected")
          cc = "Shaman"
    AB = input("Do you wish to skip the tutorial?")
