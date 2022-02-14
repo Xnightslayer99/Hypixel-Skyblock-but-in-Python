@@ -10,12 +10,24 @@ while chooseName == True:
     if pname == cheatCodes[0] or pname == cheatCodes[1]:
       infhp = True
       def sethp():
+        global hp
+        global maxhp
         if infhp == True:
           hp = -1
           maxhp = -1
         else:
           hp = 100
           maxhp = 100
+  else:
+    def sethp():
+      global hp
+      global maxhp
+      if infhp == True:
+        hp = -1
+        maxhp = -1
+      else:
+        hp = 100
+        maxhp = 100
   if pname not in cheatCodes:
     break
   if pname == "exit":
@@ -26,6 +38,8 @@ name = pname
 stre = 0
 cc = 30
 cd = 50
+hp = 100
+maxhp = 100
 sethp()
 defence = 0
 fero = 0
@@ -61,6 +75,8 @@ elif damsys == "new" or damsys == "New":
   GameRunAllow = True
 print("Hello, "+pname)
 while(GameRunAllow == True):
+  if hp == 0 or (hp < 0 and infhp is not True):
+    print("OOF, You died and lost half your coins!")
     A = input("What do you want to do? ")
     if A == "test damage":
       damcalc()
