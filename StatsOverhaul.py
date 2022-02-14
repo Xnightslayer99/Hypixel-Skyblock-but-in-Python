@@ -131,7 +131,26 @@ nameChoose()
 damsys = input("Would you like to use the old or the new Damage system?(old = before strength nerf and new = after strength nerf [cannot be changed])")
 GameRunAllow = False
 name = pname
+global stre
+global hp
+global maxhp
+global cc
+global cd
+global defence
+global fero
+global scc
+global petluck
+global mfortune
+global ffortune
+global fofortune
+global magicFind
+global intee
+global abildam
+global bdam
+global ewdam
+global dammul
 stre = 0
+global cc
 cc = 30
 cd = 50
 hp = 100
@@ -174,13 +193,27 @@ damsys = damsys
 cheatMode = False
 if damsys == "old" or damsys == "Old":
   def damcalc():
+    global cc
     global damage
-    damage = (5 + ewdam + stre/5) * (1 + stre/100) * (1+cd/100) * (1+dammul/100)
+    if cc > 100:
+      cc = 100
+    c = random.randint(1, 100)
+    if c > cc:
+      damage = (5 + ewdam + stre/5) * (1 + stre/100) * (1+dammul/100)
+    elif c <= cc:
+      damage = (5 + ewdam + stre/5) * (1 + stre/100) * (1+cd/100) * (1+dammul/100)
   GameRunAllow = True
 elif damsys == "new" or damsys == "New":
   def damcalc():
+    global cc
     global damage
-    damage = (5 + ewdam) * (1 + stre/100) * (1 + cd / 100) * (1 + dammul / 100)
+    if cc > 100:
+      cc = 100
+    c = random.randint(1, 100)
+    if c > cc:
+      damage = (5 + ewdam) * (1 + stre/100) * (1 + dammul / 100)
+    elif c <= cc:
+      damage = (5 + ewdam) * (1 + stre/100) * (1 + cd / 100) * (1 + dammul / 100)
   GameRunAllow = True
 print("Hello, "+pname)
 while(GameRunAllow == True):
@@ -200,6 +233,19 @@ while(GameRunAllow == True):
         cheatMode = True
         while cheatMode == True:
           a = input("What stat do you wish to change? ")
+          if a == "crit chance":
+            b = True
+            while b == True:
+              try:
+                  aa = input("What would you like to change it to? ")
+                  if type(aa) == str:
+                      aa = float(aa)
+                  if isinstance(aa, float) == True:
+                      cc = aa
+                      print("Crit chance has been "+f"changed to {cc}")
+                      break
+              except:
+                  print("That is not a valid number")
           if a == "strength":
             b = True
             while b == True:
@@ -209,7 +255,7 @@ while(GameRunAllow == True):
                       aa = float(aa)
                   if isinstance(aa, float) == True:
                       stre = aa
-                      print("Damage multiplier has been "+f"changed to {stre}")
+                      print("Strength has been "+f"changed to {stre}")
                       break
               except:
                   print("That is not a valid number")
