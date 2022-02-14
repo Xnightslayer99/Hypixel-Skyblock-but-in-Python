@@ -1,5 +1,4 @@
 import random
-import StatsOverhaul
 print("Hi Some of the features are still in the WIP phase, meaning that if something says '(WIP)' it means that it is not implemented into the game yet. Have fun, stay safe, and remember to update!")
 mc1 = 0
 mc2 = 0
@@ -81,7 +80,7 @@ while (game == "run"):
         slayerXpMod = 1.25
         print("aatrox's first perk")
     if aatroxperks[1] in perksm:
-        magicFind = magicFind + 20
+        #magicFind = magicFind + 20
         print("aatrox's 2nd perk")
     if aatroxperks[2] in perksm:
         slayerSPM = 0.5
@@ -95,7 +94,8 @@ while (game == "run"):
         echantXpCost = 0.85 
         anvilXpCost = 0.85
     if coleperks[0] in perksm:
-        miningXpMod += 1.5
+        #miningXpMod += 1.5
+        pass
     if coleperks[1] in perksm:
         print("Whoops This feature is still a WIP!(minions might not be added)")
     if coleperks[2] in perksm:
@@ -2010,8 +2010,12 @@ while (game == "run"):
                         smayor = 0
                     cml = 1
                     voteNow = False
-                    tempperksm = c1perks
+                    if perksc1 != "french_bread_gud":
+                        tempperksm = perksc1
+                    else:
+                        tempperksm = c1perks
                     perksm = tempperksm
+                    mayorElectionReset()
                 if A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "2":
@@ -2023,8 +2027,12 @@ while (game == "run"):
                         smayor = 0
                     cml = 1
                     voteNow = False
-                    tempperksm = c2perks
+                    if perksc2 != "french_bread_gud":
+                        tempperksm = perksc2
+                    else:
+                        tempperksm = c2perks
                     perksm = tempperksm
+                    mayorElectionReset()
                 if A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "3":
@@ -2036,8 +2044,12 @@ while (game == "run"):
                         smayor = 0
                     cml = 1
                     voteNow = False
-                    tempperksm = c3perks
+                    if perksc3 != "french_bread_gud":
+                        tempperksm = perksc3
+                    else:
+                        tempperksm = c3perks
                     perksm = tempperksm
+                    mayorElectionReset()
                 if A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "4":
@@ -2053,6 +2065,8 @@ while (game == "run"):
                         tempperksm = perksc4
                     else:
                         tempperksm = c4perks
+                    perksm = tempperksm
+                    mayorElectionReset()
                 elif A == "no":
                     print("Please choose a mayor to vote for.")
             if aaaa == "5":
@@ -2069,7 +2083,7 @@ while (game == "run"):
                     else:
                         tempperksm = c5perks
                     perksm = tempperksm
-                    continue
+                    mayorElectionReset()
                 elif A == "no":
                     print("Please choose a mayor to vote for.")
             if (aaaa != "1" or aaaa != "2" or aaaa != "3" or aaaa != "4" or aaaa != "5" & cml != 0 & voteNow != False):

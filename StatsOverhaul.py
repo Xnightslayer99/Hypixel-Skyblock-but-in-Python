@@ -7,16 +7,67 @@ global badNames
 badNames = ["mon-ika", "Mon-ika"]
 global chooseName
 chooseName = True
-def nameChoose():
+def nameChoose(z):
   global sethp
   global infhp
   global pname
   while chooseName == True:
     pname = str(input("What do you wish to be called?(This cannot be changed later)"))
-    if pname in cheatCodes:
-      print("Cheat Code discovered!")
-      if pname == cheatCodes[0] or pname == cheatCodes[1]:
-        infhp = True
+    if z == 0:
+      if pname in cheatCodes:
+        print("Cheat Code discovered!")
+        if pname == cheatCodes[0] or pname == cheatCodes[1]:
+          infhp = True
+          def sethp():
+            global hp
+            global maxhp
+            if infhp == True:
+              hp = -1
+              maxhp = -1
+            else:
+              hp = 100
+              maxhp = 100
+        if pname == cheatCodes[2] or pname == cheatCodes[3]:
+          infhp = True
+          global monika
+          def monika():
+            global stre
+            global hp
+            global maxhp
+            global cc
+            global cd
+            global defence
+            global fero
+            global scc
+            global petluck
+            global mfortune
+            global ffortune
+            global fofortune
+            global magicFind
+            global intee
+            global abildam
+            global bdam
+            global ewdam
+            global dammul
+            stre = 999999
+            hp = -1
+            maxhp = -1
+            cc = 100
+            cd = 999999
+            defence = 999999
+            fero = 999999
+            scc = 100
+            petluck = 100
+            mfortune = 1000
+            ffortune = 1000
+            fofortune = 1000
+            magicFind = 999999
+            intee = 999999
+            abildam = 999999
+            bdam = 999999
+            ewdam = 9999999
+            dammul = 999999
+      else:
         def sethp():
           global hp
           global maxhp
@@ -26,108 +77,60 @@ def nameChoose():
           else:
             hp = 100
             maxhp = 100
-      if pname == cheatCodes[2] or pname == cheatCodes[3]:
-        infhp = True
-        global monika
-        def monika():
-          global stre
-          global hp
-          global maxhp
-          global cc
-          global cd
-          global defence
-          global fero
-          global scc
-          global petluck
-          global mfortune
-          global ffortune
-          global fofortune
-          global magicFind
-          global intee
-          global abildam
-          global bdam
-          global ewdam
-          global dammul
-          stre = 999999
-          hp = -1
-          maxhp = -1
-          cc = 100
-          cd = 999999
-          defence = 999999
-          fero = 999999
-          scc = 100
-          petluck = 100
-          mfortune = 1000
-          ffortune = 1000
-          fofortune = 1000
-          magicFind = 999999
-          intee = 999999
-          abildam = 999999
-          bdam = 999999
-          ewdam = 9999999
-          dammul = 999999
-    else:
-      def sethp():
-        global hp
-        global maxhp
-        if infhp == True:
-          hp = -1
-          maxhp = -1
-        else:
-          hp = 100
-          maxhp = 100
-    if pname in badNames:
-      if pname == badNames[0] or pname == badNames[1]:
-        global bname
-        bname = True
-        try:
-          if infhp == True:
-            print("Oh no... You lost your infinite hp how sad... Now go spell Monika's name correctly 15 times")
-        except:
-          pass
-        global badName
-        def badName():
-          global stre
-          global hp
-          global maxhp
-          global cc
-          global cd
-          global defence
-          global fero
-          global scc
-          global petluck
-          global mfortune
-          global ffortune
-          global fofortune
-          global magicFind
-          global intee
-          global abildam
-          global bdam
-          global ewdam
-          global dammul
-          stre = 1
-          hp = 1
-          maxhp = 1
-          cc = 1
-          cd = 1
-          defence = 0
-          fero = 0
-          scc = 1
-          petluck = 0
-          mfortune = 0
-          ffortune = 0
-          fofortune = 0
-          magicFind = 0
-          intee = 0
-          abildam = 0
-          bdam = 1
-          ewdam = 0
-          dammul = -50
-    if pname not in cheatCodes:
+      if pname in badNames:
+        if pname == badNames[0] or pname == badNames[1]:
+          global bname
+          bname = True
+          try:
+            if infhp == True:
+              print("Oh no... You lost your infinite hp how sad... Now go spell Monika's name correctly 15 times")
+          except:
+            pass
+          global badName
+          def badName():
+            global stre
+            global hp
+            global maxhp
+            global cc
+            global cd
+            global defence
+            global fero
+            global scc
+            global petluck
+            global mfortune
+            global ffortune
+            global fofortune
+            global magicFind
+            global intee
+            global abildam
+            global bdam
+            global ewdam
+            global dammul
+            stre = 1
+            hp = 1
+            maxhp = 1
+            cc = 1
+            cd = 1
+            defence = 0
+            fero = 0
+            scc = 1
+            petluck = 0
+            mfortune = 0
+            ffortune = 0
+            fofortune = 0
+            magicFind = 0
+            intee = 0
+            abildam = 0
+            bdam = 1
+            ewdam = 0
+            dammul = -50
+    if z == 1:
+      print("Alright Your name is now "+pname)
+    if pname not in cheatCodes or (pname in cheatCodes and z != 0):
       break
     if pname == "exit":
       GameRunAllow = False
-nameChoose()
+nameChoose(0)
 damsys = input("Would you like to use the old or the new Damage system?(old = before strength nerf and new = after strength nerf [cannot be changed])")
 GameRunAllow = False
 name = pname
@@ -215,7 +218,7 @@ elif damsys == "new" or damsys == "New":
     elif c <= cc:
       damage = (5 + ewdam) * (1 + stre/100) * (1 + cd / 100) * (1 + dammul / 100)
   GameRunAllow = True
-print("Hello, "+pname)
+print(f"Welcome, {pname} to Hypixel Skyblock... But in Python!")
 while(GameRunAllow == True):
     if hp == 0 or (hp < 0 and infhp is not True):
       print("OOF, You died and lost half your coins!")
@@ -279,7 +282,7 @@ while(GameRunAllow == True):
             else:
               print("continue on then...")
           if a == "name":
-            nameChoose()
+            nameChoose(1)
     if A == "exit":
       GameRunAllow == False
       break
