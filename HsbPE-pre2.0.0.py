@@ -76,45 +76,75 @@ paulperks = ["1. EZPZ: Gain 10 extra bonus score in Dungeons.(WIP)", "2. Maraude
 derpyperks = "1. TURBO MINIONS!!!: Minions have double the output! \n2. AH CLOSED!!!: The Auction House will be closed while Derpy is elected!\n3. DOUBLE MOBS HP!!!: ALL monsters have double health!\n 4. MOAR SKILLZ!!!: Gain +50% more skill experience!(All of derpy's perks are a WIP)"
 jerryperks = "1. Perkpocalypse: Activates all perks of another mayor every 18 SkyBlock days (6 hours).\n2. Statspocalypse: Increases all stats by 10%.\n3. Jerrypocalypse: Reveal hidden Jerries from logging, farming, mining, and killing mobs.(Perks 1 and 3 are a WIP)"
 def mayorElectionReset():
-    mc1 = 0
-    mc2 = 0
-    mc3 = 0
-    mc4 = 0
-    mc5 = 0
-    c1 = 0
-    c2 = 0
-    c3 = 0
-    c4 = 0
-    c5 = 0
-    smc1 = 0
-    smc2 = 0
-    smc3 = 0
-    aa = 0
-    aaa = 0
-    aaaa = 0
-    cml = 0
-    voteNow = False
-    c1perks = "None"
-    perksc1 = "french_bread_gud"
-    c2perks = "None"
-    perksc2 = "french_bread_gud"
-    c3perks = "None"
-    perksc3 = "french_bread_gud"
-    c4perks = "None"
-    perksc4 = "french_bread_gud"
-    c5perks = "None"
-    perksc5 = "french_bread_gud"
-    tempperksm = "french_bread_gud"
-    slayerXpMod = 1
+  global mc1
+  mc1 = 0
+  global mc2
+  mc2 = 0
+  global mc3
+  mc3 = 0
+  global mc4
+  mc4 = 0
+  global mc5
+  mc5 = 0
+  global c1
+  c1 = 0
+  global c2
+  c2 = 0
+  global c3
+  c3 = 0
+  global c4
+  c4 = 0
+  global c5
+  c5 = 0
+  global smc1
+  smc1 = 0
+  global smc2
+  smc2 = 0
+  global smc3
+  smc3 = 0
+  global aa
+  aa = 0
+  global aaa
+  aaa = 0
+  global aaaa
+  aaaa = 0
+  global cml
+  cml = 0
+  global voteNow
+  voteNow = False
+  global c1perks
+  c1perks = "None"
+  global perksc1
+  perksc1 = "french_bread_gud"
+  global c2perks
+  c2perks = "None"
+  global perksc2
+  perksc2 = "french_bread_gud"
+  global c3perks
+  c3perks = "None"
+  global perksc3
+  perksc3 = "french_bread_gud"
+  global c4perks
+  c4perks = "None"
+  global perksc4
+  perksc4 = "french_bread_gud"
+  global c5perks
+  c5perks = "None"
+  global perksc5
+  perksc5 = "french_bread_gud"
+  global tempperksm
+  tempperksm = "french_bread_gud"
+  global slayerXpMod
+  slayerXpMod = 1
 mayors = ["Aatrox", "Barry the Wizard", "Cole the Miner", "Diana", "Diaz", "Foxy", "Marina", " Paul"]
 smayors = ["Jerry", "Derpy", "Scorpius"]
 smayor = "Nancy"
 cmayor = "None"
 print("Use windowed fullscreen for the best viewing!")
 print("Join the testing discord server for updates and some info!https://discord.gg/Sn2A36M")
-ZZ = input("Choose a charachter name")
-cn = cn = ZZ
-AA = input("Which game do you want to play(skyblock or wynncraft)")
+ZZ = input("Choose a charachter name: ")
+cn = ZZ
+AA = input("Which game do you want to play(skyblock or wynncraft) ")
 if AA == "skyblock":
       game = "skyblock"
 if AA == "wynncraft":
