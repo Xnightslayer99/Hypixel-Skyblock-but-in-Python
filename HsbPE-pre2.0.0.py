@@ -1,7 +1,134 @@
 import random
 import time
 import os
-
+cheatCodes = ["SK!ULT", "SQTQQTXVX", "monika", "Monika"]
+global badNames
+badNames = ["mon-ika", "Mon-ika"]
+global chooseName
+chooseName = True
+def nameChoose(z):
+  global sethp
+  global infhp
+  global pname
+  while chooseName == True:
+    pname = str(input("What do you wish to be called?(This cannot be changed later)"))
+    if z == 0:
+      if pname in cheatCodes:
+        print("Cheat Code discovered!")
+        if pname == cheatCodes[0] or pname == cheatCodes[1]:
+          infhp = True
+          def sethp():
+            global hp
+            global maxhp
+            if infhp == True:
+              hp = -1
+              maxhp = -1
+            else:
+              hp = 100
+              maxhp = 100
+        if pname == cheatCodes[2] or pname == cheatCodes[3]:
+          infhp = True
+          global monika
+          def monika():
+            global stre
+            global hp
+            global maxhp
+            global cc
+            global cd
+            global defence
+            global fero
+            global scc
+            global petluck
+            global mfortune
+            global ffortune
+            global fofortune
+            global magicFind
+            global intee
+            global abildam
+            global bdam
+            global ewdam
+            global dammul
+            stre = 999999
+            hp = -1
+            maxhp = -1
+            cc = 100
+            cd = 999999
+            defence = 999999
+            fero = 999999
+            scc = 100
+            petluck = 100
+            mfortune = 1000
+            ffortune = 1000
+            fofortune = 1000
+            magicFind = 999999
+            intee = 999999
+            abildam = 999999
+            bdam = 999999
+            ewdam = 9999999
+            dammul = 999999
+      else:
+        def sethp():
+          global hp
+          global maxhp
+          if infhp == True:
+            hp = -1
+            maxhp = -1
+          else:
+            hp = 100
+            maxhp = 100
+      if pname in badNames:
+        if pname == badNames[0] or pname == badNames[1]:
+          global bname
+          bname = True
+          try:
+            if infhp == True:
+              print("Oh no... You lost your infinite hp how sad... Now go spell Monika's name correctly 15 times")
+          except:
+            pass
+          global badName
+          def badName():
+            global stre
+            global hp
+            global maxhp
+            global cc
+            global cd
+            global defence
+            global fero
+            global scc
+            global petluck
+            global mfortune
+            global ffortune
+            global fofortune
+            global magicFind
+            global intee
+            global abildam
+            global bdam
+            global ewdam
+            global dammul
+            stre = 1
+            hp = 1
+            maxhp = 1
+            cc = 1
+            cd = 1
+            defence = 0
+            fero = 0
+            scc = 1
+            petluck = 0
+            mfortune = 0
+            ffortune = 0
+            fofortune = 0
+            magicFind = 0
+            intee = 0
+            abildam = 0
+            bdam = 1
+            ewdam = 0
+            dammul = -50
+    if z == 1:
+      print("Alright Your name is now "+pname)
+    if pname not in cheatCodes or (pname in cheatCodes and z != 0):
+      break
+    if pname == "exit":
+      GameRunAllow = False
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 gameworks = 1
@@ -142,13 +269,17 @@ smayor = "Nancy"
 cmayor = "None"
 print("Use windowed fullscreen for the best viewing!")
 print("Join the testing discord server for updates and some info!https://discord.gg/Sn2A36M")
-ZZ = input("Choose a charachter name: ")
-cn = ZZ
-AA = input("Which game do you want to play(skyblock or wynncraft) ")
-if AA == "skyblock":
+nameChoose(0)
+while True:
+  AA = input("Which game do you want to play(skyblock or wynncraft) ")
+  try:
+    if AA == "skyblock":
       game = "skyblock"
-if AA == "wynncraft":
+    if AA == "wynncraft":
       game = "wynncraft"
+    break
+  except:
+    pass
 while(game == "skyblock"):
   fxpg = (12*fslm)
   if fasl == 26:
@@ -3079,7 +3210,7 @@ uh=0
 uc=0
 ul=0
 ub=0
-if(gameworks==2):
+if(game == "wynncraft"):
    AC = input("What class do you choose(Archer, Warrior, Mage, Assassin, or Shaman)[this is case sensitive, or alternatively you can use numbers corresponding to the class ie 1 for archer, 2 for warrior ect ect.]")
    if AC == "Archer" or AC == 1:
          print("Archer class has been selected")
@@ -3098,16 +3229,16 @@ if(gameworks==2):
          cc = "Shaman"
    AB = input("Do you wish to skip the tutorial?")
    if AB == "yes":
-      gameworks = 3
+      gameRun = True
       ts = "yes"
    if AB == "no":
-      gameworks = 3
+      gameRun= True
       ts = "no"
-   while(gameworks==3):
+   while(gameRun == True):
          if(ts=="no"):
                if(tR==0):
                      print("Caracan Driver: Agh!")
-                     print("Tasim: Hey,", cn,"! You alright in there? Looks like we hit something.")
+                     print("Tasim: Hey,", pname,"! You alright in there? Looks like we hit something.")
                      time.sleep(2)
                      print("Caravan Driver: I swear I hit this same dang boulder every\n time I make this trip.")
                      time.sleep(2)
@@ -3117,7 +3248,7 @@ if(gameworks==2):
                      print("[+8 Emeralds]")
                      em=em+8
                      time.sleep(2)
-                     print("Aledar:", cn,", if you're ready, let's get moving")
+                     print("Aledar: "+pname+", if you're ready, let's get moving")
                      time.sleep(5)
                      print("Tasim: So, what do you guys know about Wynn exactly?")
                      time.sleep(2)
@@ -3146,7 +3277,7 @@ if(gameworks==2):
                            time.sleep(2)
                            print("Soldier: There's a bit of trouble up ahead. \nYou can't expect to get out of here alive if you aren't prepared.")
                            time.sleep(2)
-                           print("Soldier: There's a cave right there. Those often contain useful loot, \nI'd give it a try if i were you.\n[Enter the cave and find some armor]")
+                           print("Soldier: There's a cave right there. Those often contain useful loot, \nI'd give it a try if I were you.\n[Enter the cave and find some armor]")
                            time.sleep(2)
                            print("Aledar: Let's go inside then.")
                            time.sleep(5)
@@ -3160,7 +3291,7 @@ if(gameworks==2):
                      time.sleep(2)
                      print("Aledar: What is we creak that rock on the celing?\nThat could open up a path for us.")
                      time.sleep(2)
-                     print("Tasim: That could work...", cn,",use command break on the rock to break it!")
+                     print("Tasim: That could work..."+pname+", use command break on the rock to break it!")
                      AAA = input("Enter a command.")
                      if AAA=="break":
                            time.sleep(2)
@@ -3211,9 +3342,10 @@ if(gameworks==2):
                      time.sleep(2)
                      print("Soldier: That looks like the stuff.")
                      time.sleep(2)
-                     print("Soldier: Normally this place is pretty safe\n but somehow a few corrupted clipped through.")
+                     print("Soldier: Normally this place is pretty safe\nbut somehow a few corrupted clipped through.")
                      tR=1
          if(ts=="yes"):
                if (tR==0):
                      print("tutorial has been skipped")
                      print("[You are now entering Ragni]")
+                     tR=1

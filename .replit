@@ -1,2 +1,2 @@
 language = "python"
-run = ["python", "Slayers.py"]
+run = ["python", "File.py"]
