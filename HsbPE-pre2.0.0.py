@@ -33,7 +33,7 @@ def nameChoose(z):
             global stre
             global hp
             global maxhp
-            global cc
+            global chosenClass
             global cd
             global defence
             global fero
@@ -51,7 +51,7 @@ def nameChoose(z):
             stre = 999999
             hp = -1
             maxhp = -1
-            cc = 100
+            chosenClass = 100
             cd = 999999
             defence = 999999
             fero = 999999
@@ -90,7 +90,7 @@ def nameChoose(z):
             global stre
             global hp
             global maxhp
-            global cc
+            global chosenClass
             global cd
             global defence
             global fero
@@ -108,7 +108,7 @@ def nameChoose(z):
             stre = 1
             hp = 1
             maxhp = 1
-            cc = 1
+            chosenClass = 1
             cd = 1
             defence = 0
             fero = 0
@@ -131,6 +131,54 @@ def nameChoose(z):
       GameRunAllow = False
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
+global stre
+global hp
+global maxhp
+global cc
+global cd
+global defence
+global fero
+global scc
+global petluck
+global mfortune
+global ffortune
+global fofortune
+global magicFind
+global intee
+global abildam
+global bdam
+global ewdam
+global dammul
+stre = 0
+global cc
+cc = 30
+cd = 50
+hp = 100
+maxhp = 100
+try:
+  if infhp == True:
+    sethp()
+except:
+  pass
+defence = 0
+fero = 0
+scc = 20
+petluck = 0
+mfortune = 0
+ffortune = 0
+fofortune = 0
+magicFind = 0
+intee = 0
+abildam = 0
+bdam = 1
+ewdam = 0
+# armor = ["none"]
+# equipedHelm = "none"
+# equipedCp = "none"
+# equipedLeg = "none"
+# equipedBoots = "none"
+# equipedWeapon = "fist"
+dammul = 0
 gameworks = 1
 coins = 1
 stats = 1
@@ -159,8 +207,7 @@ facm = 1
 fasm = 1
 faddc = 0
 IC = "nothing yet"
-cc = "none"
-cn = "nonething"
+chosenClass = "none"
 ts = "blank"
 em = 0
 mc1 = 0
@@ -269,6 +316,7 @@ smayor = "Nancy"
 cmayor = "None"
 print("Use windowed fullscreen for the best viewing!")
 print("Join the testing discord server for updates and some info!https://discord.gg/Sn2A36M")
+print("Most Mayors currently have no function this is because they are most likely still being worked on.")
 nameChoose(0)
 while True:
   AA = input("Which game do you want to play(skyblock or wynncraft) ")
@@ -309,6 +357,10 @@ while(game == "skyblock"):
       print("Whoops This feature is still a WIP!(minions might not be added)")
   if coleperks[2] in perksm:
       pass
+  if scorpiusperks in perksm:
+    print(f"Oh, hello {pname}, Thank you for voting for me!\nHere is your reward.")
+    coins = coins+1000000
+    print(f"Game: You gained 1000000 coins. You now have {coins} coins.")
   if A == "Stop" or A == "exit" or A == "Exit" or A == "stop":
     game = "stopped"
   if A == "vote":
@@ -3214,19 +3266,19 @@ if(game == "wynncraft"):
    AC = input("What class do you choose(Archer, Warrior, Mage, Assassin, or Shaman)[this is case sensitive, or alternatively you can use numbers corresponding to the class ie 1 for archer, 2 for warrior ect ect.]")
    if AC == "Archer" or AC == 1:
          print("Archer class has been selected")
-         cc = "Archer"
+         chosenClass = "Archer"
    if AC == "Warrior" or AC == 2:
          print("Warrior class has been selected")
-         cc = "warrior"
+         chosenClass = "warrior"
    if AC == "Mage" or AC == 3:
          print("Mage class has been selected")
-         cc = "Mage"
+         chosenClass = "Mage"
    if AC == "Assassin" or AC == 4:
          print("Assassin class has been selected")
-         cc = "Assassin"
+         chosenClass = "Assassin"
    if AC == "Shaman" or AC == 5:
          print("Shaman class has been selected")
-         cc = "Shaman"
+         chosenClass = "Shaman"
    AB = input("Do you wish to skip the tutorial?")
    if AB == "yes":
       gameRun = True
@@ -3298,41 +3350,41 @@ if(game == "wynncraft"):
                            print("*CRACK*")
                            print("*CRASH*")
                            print("Aledar It worked! Now we can reach that chest.")
-                     if cc == "Warrior":
+                     if chosenClass == "Warrior":
                            print("[+1 Unitentified helmet]\n[+2 Copper Ingot]")
                            uh=1
                            ci=2
                            time.sleep(3)
                            print("Aledar: I think that's all we needed , let's get out")
                            print("Go through the exit to leave the cave")
-                     if cc == "Mage":
+                     if chosenClass == "Mage":
                            print("[+1 Unitentified helmet]\n[+2 Copper Ingot]")
                            uh=1
                            time.sleep(3)
                            print("Aledar: I think that's all we needed , let's get out")
                            print("Go through the exit to leave the cave")
-                     if cc == "Warrior":
+                     if chosenClass == "Warrior":
                            print("[+1 Unitentified helmet]\n[+2 Wheat String]")
                            uh=1
                            ws=2
                            time.sleep(3)
                            print("Aledar: I think that's all we needed , let's get out")
                            print("Go through the exit to leave the cave")
-                     if cc == "Archer":
+                     if chosenClass == "Archer":
                            print("[+1 Unitentified helmet]\n[+2 Wheat String]")
                            uh=1
                            ws=2
                            time.sleep(3)
                            print("Aledar: I think that's all we needed , let's get out")
                            print("Go through the exit to leave the cave")
-                     if cc == "Assassin":
+                     if chosenClass == "Assassin":
                            print("[+1 Unitentified helmet]\n[+2 Copper Ingot]")
                            uh=1
                            ci=2
                            time.sleep(3)
                            print("Aledar: I think that's all we needed , let's get out")
                            print("Go through the exit to leave the cave")
-                     if cc == "Shaman":
+                     if chosenClass == "Shaman":
                            print("[+1 Unitentified helmet]\n[+2 Gudgeon Oil]")
                            uh=1
                            go=2
