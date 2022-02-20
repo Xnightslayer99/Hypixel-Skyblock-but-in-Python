@@ -1,6 +1,8 @@
 import random
 import time
 import os
+import getpass
+import pickle
 cheatCodes = ["SK!ULT", "SQTQQTXVX", "monika", "Monika"]
 global badNames
 badNames = ["mon-ika", "Mon-ika"]
@@ -10,8 +12,10 @@ def nameChoose(z):
   global sethp
   global infhp
   global pname
+  global spname
   while chooseName == True:
     pname = str(input("What do you wish to be called?(This cannot be changed later)"))
+    spname = pname
     if z == 0:
       if pname in cheatCodes:
         print("Cheat Code discovered!")
@@ -29,7 +33,11 @@ def nameChoose(z):
         if pname == cheatCodes[2] or pname == cheatCodes[3]:
           infhp = True
           global monika
+          global minika
+          minika = 1
           def monika():
+            global pname
+            pname = getpass.getuser()
             global stre
             global hp
             global maxhp
@@ -87,6 +95,8 @@ def nameChoose(z):
             pass
           global badName
           def badName():
+            global minika
+            minika = 0
             global stre
             global hp
             global maxhp
@@ -124,13 +134,23 @@ def nameChoose(z):
             ewdam = 0
             dammul = -50
     if z == 1:
-      print("Alright Your name is now "+pname)
+      print("Alright Your name is now "+spname)
     if pname not in cheatCodes or (pname in cheatCodes and z != 0):
       break
     if pname == "exit":
       GameRunAllow = False
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
+nameChoose(0)
+try:
+  if minika == 1:
+    monika()
+except:
+  try:
+    if bname == True:
+      badName()
+  except:
+    pass
 global stre
 global hp
 global maxhp
@@ -314,11 +334,20 @@ mayors = ["Aatrox", "Barry the Wizard", "Cole the Miner", "Diana", "Diaz", "Foxy
 smayors = ["Jerry", "Derpy", "Scorpius"]
 smayor = "Nancy"
 cmayor = "None"
+cls()
 print("Use windowed fullscreen for the best viewing!")
 print("Join the testing discord server for updates and some info!https://discord.gg/Sn2A36M")
 print("Most Mayors currently have no function this is because they are most likely still being worked on.")
-nameChoose(0)
 while True:
+  try:
+    if minika == 1:
+      cls()
+      print(f"Monika: Ehehe~ You remembered me, thank you, {pname}.")
+    if bname == True:
+      cls()
+      print(f"Monika: {getpass.getuser()} I can't believe you!\nMonika: I've told you I dont like to be called that!")
+  except:
+    pass
   AA = input("Which game do you want to play(skyblock or wynncraft) ")
   try:
     if AA == "skyblock":
@@ -328,11 +357,18 @@ while True:
     break
   except:
     pass
+if game == "skyblock":
+  cls()
+  print("Skyblock has been chosen.")
 while(game == "skyblock"):
+  #saved = [cheatCodes, badNames, chooseName, pname, spname, hp, maxhp, infhp, monika, minika, stre, chosenClass, cd, defence, fero, scc, petluck, mfortune, ffortune, fofortune, magicFind, intee, abildam, bdam, ewdam, dammul, gameworks, coins, stats, haswatch, xp, fibsh, gtime, ggtime, eyes, souls, cxp, csl, cm, sm, cslxp, fslxp, fcm, fsm, fsl, fxp, fslm,fasl, faxp, faslxp, facm, fasm, faddc, IC, ts, em, mc1, mc2, mc3, mc4, mc5, c1, c2, c3, c4, c5, smc1, smc2, smc3, cml, voteNow, slayerXpMod, c1perks, perksc1, c2perks, perksc2, c3perks, perksc3, c4perks, perksc4, c5perks, perksc5, perksm]
   fxpg = (12*fslm)
   if fasl == 26:
       DD=random.randint(100,100)
-  A = input("What action do you want to do?")
+  A = input("What action do you want to do? ")
+  # if A == "save":
+  #   file = open('save.txt', 'wb')
+  #   pickle.dump(saved, file)
   if aatroxperks[0] in perksm:
     slayerXpMod = 1.25
     print("aatrox's first perk")
@@ -358,7 +394,7 @@ while(game == "skyblock"):
   if coleperks[2] in perksm:
       pass
   if scorpiusperks in perksm:
-    print(f"Oh, hello {pname}, Thank you for voting for me!\nHere is your reward.")
+    print(f"Oh, hello {spname}, Thank you for voting for me!\nHere is your reward.")
     coins = coins+1000000
     print(f"Game: You gained 1000000 coins. You now have {coins} coins.")
   if A == "Stop" or A == "exit" or A == "Exit" or A == "stop":
@@ -754,31 +790,46 @@ while(game == "skyblock"):
                   if c1 == "Paul":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
-                          c1perks = paulperks[0]
+                          if perksc1 != "french_bread_gud":
+                            perksc1 = paulperks[0]
+                          else:
+                            c1perks = paulperks[0]
                           if perksc1 != "french_bread_gud":
                               print(perksc1)
                           else:
                               print(c1perks)
                       if AAAA == 1:
-                          c1perks = paulperks[1]
+                          if perksc1 != "french_bread_gud":
+                            perksc1 = paulperks[1]
+                          else:
+                            c1perks = paulperks[1]
                           if perksc1 != "french_bread_gud":
                               print(perksc1)
                           else:
                               print(c1perks)
                       if AAAA == 2:
-                          c1perks = paulperks[2]
+                          if perksc1 != "french_bread_gud":
+                            perksc1 = paulperks[2]
+                          else:
+                            c1perks = paulperks[2]
                           if perksc1 != "french_bread_gud":
                               print(perksc1)
                           else:
                               print(c1perks)
                       if AAAA == 3:
-                          c1perks = paulperks[0]+"\n"+paulperks[1]
+                          if perksc1 != "french_bread_gud":
+                            perksc1 = paulperks[0]+"\n"+paulperks[1]
+                          else:
+                            c1perks = paulperks[0]+"\n"+paulperks[1]
                           if perksc1 != "french_bread_gud":
                               print(perksc1)
                           else:
                               print(c1perks)
                       if AAAA == 4:
-                          c1perks = paulperks[0]+"\n"+paulperks[2]
+                          if perksc1 != "french_bread_gud":
+                            perksc1 = paulperks[0]+"\n"+paulperks[2]
+                          else:
+                            c1perks = paulperks[0]+"\n"+paulperks[2]
                           if perksc1 != "french_bread_gud":
                               print(perksc1)
                           else:
@@ -2654,12 +2705,16 @@ you also lose half of your coins, what a noob""")
     if fasl == 26:
       DD=random.randint(100,100)
   if A == "check farming coin multiplier":
-    print(facm)
+    cls()
+    print(f"Farming coin multiplier is {facm}")
   if A == "check farming stat multiplier":
-    print(fasm)
+    cls()
+    print(f"Farming stat multiplier is {fasm}")
   if A == "check farming lvl":
+    cls()
     print(faslxp)
   if A == "check farming xp left":
+    cls()
     print(((fasl+1)*1000)-faxp)
   if cm == 3:
     if (cxp*cslxp) == (10000*cslxp):
@@ -3290,7 +3345,7 @@ if(game == "wynncraft"):
          if(ts=="no"):
                if(tR==0):
                      print("Caracan Driver: Agh!")
-                     print("Tasim: Hey,", pname,"! You alright in there? Looks like we hit something.")
+                     print("Tasim: Hey,", spname,"! You alright in there? Looks like we hit something.")
                      time.sleep(2)
                      print("Caravan Driver: I swear I hit this same dang boulder every\n time I make this trip.")
                      time.sleep(2)
@@ -3300,7 +3355,7 @@ if(game == "wynncraft"):
                      print("[+8 Emeralds]")
                      em=em+8
                      time.sleep(2)
-                     print("Aledar: "+pname+", if you're ready, let's get moving")
+                     print("Aledar: "+spname+", if you're ready, let's get moving")
                      time.sleep(5)
                      print("Tasim: So, what do you guys know about Wynn exactly?")
                      time.sleep(2)
@@ -3343,7 +3398,7 @@ if(game == "wynncraft"):
                      time.sleep(2)
                      print("Aledar: What is we creak that rock on the celing?\nThat could open up a path for us.")
                      time.sleep(2)
-                     print("Tasim: That could work..."+pname+", use command break on the rock to break it!")
+                     print("Tasim: That could work..."+spname+", use command break on the rock to break it!")
                      AAA = input("Enter a command.")
                      if AAA=="break":
                            time.sleep(2)
