@@ -3,7 +3,7 @@ import time
 import os
 import getpass
 import pickle
-cheatCodes = ["SK!ULT", "SQTQQTXVX", "monika", "Monika"]
+cheatCodes = ["SK!ULT", "SQTQQTXVX", "monika", "Monika", "1NF5UM3Y35", "A1WAY5CR17", "1NF-CR17"]
 global badNames
 badNames = ["mon-ika", "Mon-ika"]
 global chooseName
@@ -30,6 +30,22 @@ def nameChoose(z):
             else:
               hp = 100
               maxhp = 100
+        if pname == cheatCodes[4]:
+          def infeyes():
+            global seed
+            seed = 487
+        if pname == cheatCodes[5]:
+          def alwayscrit():
+            global seed
+            seed = 9924
+        if pname == cheatCodes[6]:
+          def alwayscrit():
+            pass
+          def infeyes():
+            pass
+          def infcrit():
+            global seed
+            seed = 83546
         if pname == cheatCodes[2] or pname == cheatCodes[3]:
           infhp = True
           global monika
