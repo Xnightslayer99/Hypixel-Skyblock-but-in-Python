@@ -5,7 +5,7 @@ coins = 1
 stats = 1
 haswatch = 0
 xp = 1
-fibsh = 0
+fish = 0
 gtime = 0
 ggtime = 0
 eyes = 0
@@ -36,7 +36,7 @@ print("Use windowed fullscreen for the best viewing!")
 print("Join the testing discord server for updates and some info!https://discord.gg/Sn2A36M")
 ZZ = input("Choose a charachter name")
 cn = cn = ZZ
-AA = input("Which game do you want to play(skyblock or wynncraft)")
+AA = input("What game would you like to play? skyblock, or wynncraft. ")
 if AA == "skyblock":
       gameworks=1
 if AA == "wynncraft":
@@ -45,11 +45,12 @@ while(gameworks==1):
    fxpg = (12*fslm)
    if fasl == 26:
        DD=random.randint(100,100)
-   A = input("What action do you want to do?")
+   A = input("What action do you want to do? ")
    DD = random.randint(faddc,100)
    J = random.randint(1,1000)
    if A == "cl":
-      print("commands are: \ncheck balance, play among us\nforage, catch fibsh, check stats\nsell fibsh, check gtime, explore\nfight, check coin multiplier, check stat multiplier\ncheck combat lvl, check combat xp left, check fibsh coin multiplier\ncheck fibsh stat multiplier\nckeck fibsh lvl, check fibsh xp left\ncheck farming coin multiplier, check farming stat multiplier, check farming lvl\ncheck farming xp left, farm, grind eyes\nsummon drag, dark auction, and tia")
+      # jesus that's a long boy
+      print("Commands are: \ncheck balance, play among us\nforage, catch fish, check stats\nsell fish, check gtime, explore\nfight, check coin multiplier, check stat multiplier\ncheck combat lvl, check combat xp left, check fish coin multiplier\ncheck fish stat multiplier\nckeck fish lvl, check fish xp left\ncheck farming coin multiplier, check farming stat multiplier, check farming lvl\ncheck farming xp left, farm, grind eyes\nsummon drag, dark auction, and tia")
    if A == "check balance":
        print(coins)
        gtime=gtime+1
@@ -124,15 +125,15 @@ while(gameworks==1):
            print("+1 strength")
            stats = stats+1
            gtime=gtime+1
-   elif A == "catch fibsh":
-      print("you catch fibsh")
-      fibsh = fibsh+(10*fslm)
+   elif A == "catch fish":
+      print("you catch fish")
+      fish = fish+(10*fslm)
       gtime=gtime+1
       fxp=fxp+fxpg
-   elif A == "sell fibsh":
-      print("you ate", fibsh, "fibsh")
-      coins = fibsh*100
-      fibsh = 0
+   elif A == "sell fish":
+      print("you ate", fish, "fish")
+      coins = fish*100
+      fish = 0
       gtime=gtime+1
       print("you now have", coins, "coin(s)")
    elif A == "+100 gtime":
@@ -225,7 +226,7 @@ you also lose half of your coins, what a noob""")
   #               pass
    if A == "combat level up":
       cxp=cxp+1000
-   if A == "fibsh level up":
+   if A == "fish level up":
       fxp=fxp+1000
    if A == "farming level up":
       faxp=faxp+1000
@@ -257,29 +258,29 @@ you also lose half of your coins, what a noob""")
       if (cxp*cslxp) == (10000*cslxp):
          cm=cm-2
    if fxp == 1000:
-      print("you leveled up your fibsh skill to lvl 1 gratz and gained 10k coins")
+      print("you leveled up your fish skill to lvl 1 gratz and gained 10k coins")
       coins=coins+10000
       stats=stats+100
       csl=csl+1
-      print("Next combat level is at 2000 fibshing xp")
+      print("Next combat level is at 2000 fishing xp")
    if fxp == (fsl+1)*1000:
       fsl=fsl+1
-      print("you leveled up your fibshing to lvl", fsl, "gratz and gained", 10*fcm, "k coins")
+      print("you leveled up your fishing to lvl", fsl, "gratz and gained", 10*fcm, "k coins")
       coins=coins+(10000*fsm)
       stats=stats+(100*fsm)
-      print("Next fibshing level is at", (fsl+1)*1000, "fibshing xp")
+      print("Next fishing level is at", (fsl+1)*1000, "fishing xp")
    if (fsl*fslxp) == (10*fslxp):
       fslxp=fslxp+1
       fsm=fsm+1
       fcm=fcm+1
       fslm=fslm+0.5
-   if A == "check fibsh coin multiplier":
+   if A == "check fish coin multiplier":
       print(fcm)
-   if A == "check fibsh stat multiplier":
+   if A == "check fish stat multiplier":
       print(fsm)
-   if A == "check fibsh lvl":
+   if A == "check fish lvl":
       print(fsl)
-   if A == "check fibsh xp left":
+   if A == "check fish xp left":
       print(((fsl+1)*1000)-fxp)
    if fcm == 3:
       if (fxp*fslxp) == (10000*fslxp):
