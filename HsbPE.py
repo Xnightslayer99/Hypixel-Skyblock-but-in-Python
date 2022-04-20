@@ -34,9 +34,9 @@ ts = "blank"
 em = 0
 print("Use windowed fullscreen for the best viewing!")
 print("Join the testing discord server for updates and some info!https://discord.gg/Sn2A36M")
-ZZ = input("Choose a charachter name")
+ZZ = input("What do you wish to be called? ")
 cn = cn = ZZ
-AA = input("Which game do you want to play(skyblock or wynncraft)")
+AA = input("Which game do you want to play(skyblock or wynncraft) ")
 if AA == "skyblock":
       gameworks=1
 if AA == "wynncraft":
@@ -45,7 +45,7 @@ while(gameworks==1):
    fxpg = (12*fslm)
    if fasl == 26:
        DD=random.randint(100,100)
-   A = input("What action do you want to do?")
+   A = input("What action do you want to do? ")
    DD = random.randint(faddc,100)
    J = random.randint(1,1000)
    if A == "cl":
@@ -54,7 +54,7 @@ while(gameworks==1):
        print(coins)
        gtime=gtime+1
    if A == "gib me coin":
-       PP = input("how many coins do you want?")
+       PP = input("how many coins do you want? ")
        Pp = str(PP)
        print(Pp,"coins have been added to your bank account")
        coins=coins+Pp
@@ -101,14 +101,14 @@ while(gameworks==1):
                 if TK == "I will do it":
                    TK2 = input("you complete the first part of this task will you do the seccond?")
                    if TK2 == "yes":
-                      print("you have completed your first task poggers")
+                      print("You have completed your first task!\npoggers!")
              if Y == 4:
-                print("your task is to align the engine output")
-                TK = input("will you go do it or watch the cams?")
+                print("Your task is to align the engine output")
+                TK = input("Will you go do it or watch the cams? ")
                 if TK == "I will do it":
-                   TK2 = input("you complete the first part of this task will you do the seccond?")
+                   TK2 = input("You complete the first part of this task will you do the seccond? ")
                    if TK2 == "yes":
-                      print("you have completed your first task poggers")
+                      print("You have completed your first task!\npoggers!")
    elif A == "+100 strength":
       stats = stats+100
       gtime=gtime+1
@@ -119,22 +119,22 @@ while(gameworks==1):
        gtime=gtime+1
    elif A == "forage":
        C = random.randint(1,10)
-       print("you break a tree")
+       print("You break a tree")
        if C == 7:
            print("+1 strength")
            stats = stats+1
            gtime=gtime+1
    elif A == "catch fibsh":
-      print("you catch fibsh")
+      print("You catch fibsh")
       fibsh = fibsh+(10*fslm)
       gtime=gtime+1
       fxp=fxp+fxpg
    elif A == "sell fibsh":
-      print("you ate", fibsh, "fibsh")
+      print("You ate", fibsh, "fibsh!")
       coins = fibsh*100
       fibsh = 0
       gtime=gtime+1
-      print("you now have", coins, "coin(s)")
+      print("You now have", coins, "coin(s)!")
    elif A == "+100 gtime":
       gtime=gtime+100
    elif A == "check gtime":
@@ -142,71 +142,71 @@ while(gameworks==1):
    elif A == "explore":
        X = random.randint(1,5)
        if X == 1:
-           print("you stumble upon wheat and get 7 coins")
+           print("You stumble upon wheat and get 7 coins")
            coins = coins+7
            gtime=gtime+1
        if X == 2:
            if stats>1:
-               print("you found a zombie and killed it, you got 9 coins")
+               print("You found a zombie and killed it, you got 9 coins")
                coins = coins+9
                stats = stats+1
                gtime=gtime+1
                cxp=cxp+5
            else:
-               print("""you found and zombie and it killed you, you die, L
-you also lose half of your coins, what a noob""")
+               print("""You found and zombie and it killed you, you die, L
+You also lose half of your coins, what a noob""")
                coins = coins/2
                gtime=gtime+1    
        if X == 3:
-           print("you stumble upon a tree and break it, +1 stats and +2 coins")
+           print("You stumble upon a tree and break it, +1 stats and +2 coins")
            stats = stats+1
            coins = coins+1
            gtime=gtime+1
        if X == 4:
            if stats>20:
-               print("you fight an enderman and kill it, +70 coins and +5 strength")
+               print("You fight an enderman and kill it, +70 coins and +5 strength")
                stats=stats+5
                coins=coins+70
                gtime=gtime+1
            else:
-               print("you find an enderman and try to fight it")
-               print("you are not strong enough and almost die but you get lucky")
-               print("someone comes and kills it so you survive")
+               print("You find an enderman and try to fight it")
+               print("You are not strong enough and almost die but you get lucky")
+               print("Someone comes and kills it so you survive")
                gtime=gtime+1
        if X == 5:
-          print("you find a mine and collect ores, then some weird enemy appears")
+          print("You find a mine and collect ores, then some weird enemy appears")
           if stats>100:
-             print("you kill it and it drops a weird watch, you decide to keep it")
+             print("You kill it and it drops a weird watch, you decide to keep it")
              haswatch=haswatch+1
              gtime=gtime+1
              cxp=cxp+20
           else:
-             print("you quickly realize that you can't fight it and decide to run away")
+             print("You quickly realize that you can't fight it and decide to run away")
              gtime=gtime+1
    elif A == "fight":
            G = random.randint(1,2)
            if G == 1:
-              print("you find a random zombie")
+              print("You find a random zombie")
               if stats>=150:
-                 print("you kill it and gain some coins, +5 coins, +5 strength")
+                 print("You kill it and gain some coins, +5 coins, +5 strength")
                  coins=coins+5
                  stats=stats+5
                  gtime=gtime+1
                  cxp=cxp+35
               if stats<150:
-                    print("you died and lost half your coins")
+                    print("You died and lost half your coins")
                     coins=coins/2
                     gtime=gtime+1
            if G == 2:
-               print("you find a spider and fight it")
+               print("You find a spider and fight it")
                if stats>=160:
-                  print("you kill it, +6 coins, +6 strength")
+                  print("You kill it, +6 coins, +6 strength")
                   coins=coins+6
                   stats=stats+6
                   gtime=gtime+1
                   cxp=cxp+12
                if stats<160:
-                  print("you died L you lost half your coins")
+                  print("You died L you lost half your coins")
                   coins=coins/2
                   gtime=gtime+1
   # if A == "do slayers":
@@ -230,14 +230,14 @@ you also lose half of your coins, what a noob""")
    if A == "farming level up":
       faxp=faxp+1000
    if cxp == 1000:
-      print("you leveled up your combat to lvl 1 gratz and gained 10k coins")
+      print("You leveled up your combat to lvl 1! \nGratz! And you gained 10k coins!")
       coins=coins+10000
       stats=stats+100
       csl=csl+1
       print("Next combat level is at 2000 combat xp")
    if cxp == (csl+1)*1000:
       csl=csl+1
-      print("you leveled up your combat to lvl", csl, "gratz and gained", 10*cm, "k coins")
+      print(f"You leveled up your combat to lvl {csl}! \nGratz! And you gained {10*cm}k coins!")
       coins=coins+(10000*sm)
       stats=stats+(100*sm)
       print("Next combat level is at", (csl+1)*1000, "combat xp")
@@ -257,14 +257,14 @@ you also lose half of your coins, what a noob""")
       if (cxp*cslxp) == (10000*cslxp):
          cm=cm-2
    if fxp == 1000:
-      print("you leveled up your fibsh skill to lvl 1 gratz and gained 10k coins")
+      print("You leveled up your fibsh skill to lvl 1! \nGratz! And you gained 10k coins!")
       coins=coins+10000
       stats=stats+100
       csl=csl+1
       print("Next combat level is at 2000 fibshing xp")
    if fxp == (fsl+1)*1000:
       fsl=fsl+1
-      print("you leveled up your fibshing to lvl", fsl, "gratz and gained", 10*fcm, "k coins")
+      print(f"You leveled up your fibshing to lvl {fsl}! \nGratz! And you gained {10*fcm}k coins!")
       coins=coins+(10000*fsm)
       stats=stats+(100*fsm)
       print("Next fibshing level is at", (fsl+1)*1000, "fibshing xp")
@@ -273,6 +273,9 @@ you also lose half of your coins, what a noob""")
       fsm=fsm+1
       fcm=fcm+1
       fslm=fslm+0.5
+   if A == "tru":
+     souls = souls+5
+     print(f"You have gained 5 souls you now have {souls} souls!")
    if A == "check fibsh coin multiplier":
       print(fcm)
    if A == "check fibsh stat multiplier":
@@ -285,7 +288,7 @@ you also lose half of your coins, what a noob""")
       if (fxp*fslxp) == (10000*fslxp):
          fcm=fcm-2
    if faxp == 1000:
-      print("you leveled up your farming to lvl 1 gratz and gained 10k coins")
+      print("You leveled up your farming to lvl 1! Gratz! And you gained 10k coins")
       coins=coins+10000
       stats=stats+100
       fasl=fasl+1
@@ -293,11 +296,11 @@ you also lose half of your coins, what a noob""")
    if faxp == (fasl+1)*1000:
       fasl=fasl+1
       faddc=faddc+4
-      print("you leveled up your farming to lvl", fasl, "gratz and gained", 10*facm, "k coins")
+      print(f"You leveled up your farming to lvl {fasl}! \nGratz! And you gained {10*facm}k coins")
       coins=coins+(10000*facm)
       stats=stats+(100*fasm)
       print("Next farming level is at", (fasl+1)*1000, "farming xp")
-      print("your farming double drop chance is now", faddc, "dev note: later ill work on triple drop chance rn there is only double drop chance")
+      print("Your farming double drop chance is now", faddc, "\ndev note: later I'll work on triple drop chance, rn there is only double drop chance")
    if (fasl*faslxp) == (10*faslxp):
       faslxp=faslxp+1
       fasm=fasm+1
@@ -319,81 +322,81 @@ you also lose half of your coins, what a noob""")
       L = random.randint(1,1)
       if L == 1:
          if DD == 100:
-            print("you farmed 2 pumpkin")
+            print("You farmed 2 pumpkin")
             faxp=faxp+2.4
             gtime=gtime+1
             coins=coins+4
          else:
-            print("you farmed 1 pumpkins")
+            print("You farmed 1 pumpkins")
             faxp=faxp+1.2
             gtime=gtime+1
             coins=coins+2
    if A == "grind eyes":
-          print("you stumble upon a portal")
+          print("You stumble upon a portal")
           if csl>=12:
              D = random.randint(1,100)
              if D == 100:
-               print("you decide to enter it, you find an enderman with a portal frame and kill it, you get a summoning eye")
+               print("You decide to enter it, you find an enderman with a portal frame and kill it, you get a summoning eye")
                stats=stats+1
                coins=coins+15
                B = input("do you want to sell the eye?")
                if B == "yes" or B == "Yes":
-                  print("Ok I'll pay 600k coins")
-                  coins=coins+600000
+                  print("Ok I'll pay 900k coins")
+                  coins=coins+900000
                if B == "no":
                   print("ok")
                   eyes=eyes+1
                   xp = xp+2
              else:
-                print("you enter the portal and find a Zealot, you kill it")
+                print("You enter the portal and find a Zealot, you kill it")
                 xp = xp+1
                 coins=coins+15
                 cxp=cxp+60
                 gtime=gtime+1
           else:
-             print("A strange force prevents you from entering it")
+             print("A strange force prevents you from entering it.")
    elif A == "summon drag":
       if eyes>=8:
          C = input("Are you sure?")
          if C == "yes":
-            print("ok you'll summon a dragon")
+            print("Ok you'll summon a dragon.")
             eyes=eyes-8
-            E = random.randint(1,7)
+            E = random.randint(1,100)
          if C == "no":
-            print("ok have a good day")
-         if E == 1:
-            print("you summoned a young dragon")
-         if E == 2:
-            print("you summoned a old dragon")
+            print("Ok! Have a good day!")
+         if E < 16:
+            print("You summoned a young dragon")
+         if E > 16 and E < 32:
+            print("You summoned a old dragon")
             print("F in the chat")
-         if E == 3:
-            print("you summoned a wise dragon")
-         if E == 4:
-            print("you summoned a protector dragon")
+         if E > 32 and E < 48:
+            print("You summoned a wise dragon")
+         if E > 48 and E < 64:
+            print("You summoned a protector dragon")
             print("F in the chat")
-         if E == 5:
-            print("you summoned a strong dragon")
-         if E == 6:
-            print("you summoned a unstable dragon")
-         if E == 7:
-            print("you summoned a superior dragon")
+         if E > 64 and E < 80:
+            print("You summoned a strong dragon")
+         if E > 80 and E < 96:
+            print("You summoned a unstable dragon")
+         if E >= 96:
+            print("You summoned a superior dragon")
    elif A == "eye count":
       print(eyes)
    elif A == "tia":
-      C = input("would you like to claim your fairy souls?")
+      C = input("Would you like to claim your fairy souls? ")
       if C == "yes":
          if souls<5:
-            print("you need", 5-souls, "to claim your souls.")
+            print("You need", 5-souls, "to claim your souls.")
       if C == "yes":
          if souls>=5:
-            print("thank you, you now have a permanent stat boost")
+            print("Thank you! You now have a permanent stat boost")
             stats=stats+6
             souls=souls-5
       if C == "no":
          print("Ok come again.")
    if J == 1000:
       print("you found a fairy soul colect 5 and give them to tia to get a stat boost")
-      print("there is a command called tia")
+      print("there is a command called 'tia'")
       souls=souls+1
    elif A == "dark auction":
       M = random.randint(1,12)
