@@ -600,10 +600,6 @@ while(game == "skyblock"):
                           elif perksc1 != "french_bread_gud":
                               c1perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
                               print(c1perks)
-                      if perksc1 == "french_bread_gud":
-                          perksc1 = c1perks
-                      if c1perks != perksc1:
-                          c1perks = perksc1
                   if c1 == "Diana":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -655,10 +651,6 @@ while(game == "skyblock"):
                           elif perksc1 != "french_bread_gud":
                               c1perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
                               print(c1perks)
-                      if perksc1 == "french_bread_gud":
-                          perksc1 = c1perks
-                      if c1perks != perksc1:
-                          c1perks = perksc1
                   if c1 == "Diaz":
                       AAAA = random.randint(0, 2)
                       if AAAA == 0:
@@ -733,10 +725,6 @@ while(game == "skyblock"):
                           elif perksc1 != "french_bread_gud":
                               c1perks = coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
                               print(c1perks)
-                      if perksc1 == "french_bread_gud":
-                          perksc1 = c1perks
-                      if c1perks != perksc1:
-                          c1perks = perksc1
                   if c1 == "Foxy":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -788,10 +776,6 @@ while(game == "skyblock"):
                           elif perksc1 != "french_bread_gud":
                               c1perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
                               print(c1perks)
-                      if perksc1 == "french_bread_gud":
-                          perksc1 = c1perks
-                      if c1perks != perksc1:
-                          c1perks = perksc1
                   if c1 == "Marina":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -843,10 +827,6 @@ while(game == "skyblock"):
                           elif perksc1 != "french_bread_gud":
                               c1perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
                               print(c1perks)
-                      if perksc1 == "french_bread_gud":
-                          perksc1 = c1perks
-                      if c1perks != perksc1:
-                          c1perks = perksc1
                   if c1 == "Paul":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -898,52 +878,35 @@ while(game == "skyblock"):
                           elif perksc1 != "french_bread_gud":
                               c1perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
                               print(c1perks)
-                      if perksc1 == "french_bread_gud":
-                          perksc1 = c1perks
-                      if c1perks != perksc1:
-                          c1perks = perksc1
+                              
                   if c1 == "Scorpius":
-                    if perksc1 != "french_bread_gud":
+                    if perksc1 == "french_bread_gud":
                       perksc1 = scorpiusperks
-                    else:
+                      print(perksc1)
+                    elif perksc1 != "french_bread_gud":
                       c1perks = scorpiusperks
-                    if perksc1 != "french_bread_gud":
-                            print(perksc1)
-                    else:
                       print(c1perks)
-                    if perksc1 == "french_bread_gud":
-                        perksc1 = c1perks
-                    if c1perks != perksc1:
-                        c1perks = perksc1
+                      
                   if c1 == "Derpy":
-                    if perksc1 != "french_bread_gud":
+                    if perksc1 == "french_bread_gud":
                       perksc1 = derpyperks
-                    else:
+                      print(perksc1)
+                    elif perksc1 != "french_bread_gud":
                       c1perks = derpyperks
-                    if perksc1 != "french_bread_gud":
-                            print(perksc1)
-                    else:
-                            print(c1perks)
-                    if perksc1 == "french_bread_gud":
-                        perksc1 = c1perks
-                    if c1perks != perksc1:
-                        c1perks = perksc1
+                      print(c1perks)
+                      
                   if c1 == "Jerry":
-                    if perksc1 != "french_bread_gud":
-                      perksc1 = jerryperks
-                    else:
-                      c1perks = jerryperks
-                    if perksc1 != "french_bread_gud":
-                            print(perksc1)
-                    else:
-                            print(c1perks)
                     if perksc1 == "french_bread_gud":
-                        perksc1 = c1perks
-                    if c1perks != perksc1:
-                        c1perks = perksc1
+                      perksc1 = jerryperks
+                      print(perksc1)
+                    elif perksc1 != "french_bread_gud":
+                      c1perks = jerryperks
+                      print(c1perks)
+                      
               if AAA == "2":
                   if c2 == "Aatrox":
                       AAAA = random.randint(0, 6)
+                      
                       if AAAA == 0:
                           if perksc2 == "french_bread_gud":
                               perksc2 = aatroxperks[0]
@@ -951,6 +914,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = aatroxperks[0]
                               print(c2perks)
+                              
                       if AAAA == 1:
                           if perksc2 == "french_bread_gud":
                               perksc2 = aatroxperks[1]
@@ -958,6 +922,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = aatroxperks[1]
                               print(c2perks)
+                              
                       if AAAA == 2:
                           if perksc2 == "french_bread_gud":
                               perksc2 = aatroxperks[2]
@@ -965,6 +930,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = aatroxperks[2]
                               print(c2perks)
+                              
                       if AAAA == 3:
                           if perksc2 == "french_bread_gud":
                               perksc2 = aatroxperks[0]+"\n"+aatroxperks[1]
@@ -972,6 +938,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = aatroxperks[0]+"\n"+aatroxperks[1]
                               print(c2perks)
+                              
                       if AAAA == 4:
                           if perksc2 == "french_bread_gud":
                               perksc2 = aatroxperks[0]+"\n"+aatroxperks[2]
@@ -979,6 +946,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = aatroxperks[0]+"\n"+aatroxperks[2]
                               print(c2perks)
+                              
                       if AAAA == 5:
                           if perksc2 == "french_bread_gud":
                               perksc2 = aatroxperks[1]+"\n"+aatroxperks[2]
@@ -986,6 +954,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = aatroxperks[1]+"\n"+aatroxperks[2]
                               print(c2perks)
+                              
                       if AAAA == 6:
                           if perksc2 == "french_bread_gud":
                               perksc2 = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
@@ -993,12 +962,9 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
                               print(c2perks)
-                      if perksc2 == "french_bread_gud":
-                          perksc2 = c2perks
-                      if c2perks != perksc2:
-                          c2perks = perksc2
                   if c2 == "Barry the Wizard":
                       AAAA = random.randint(0, 6)
+                      
                       if AAAA == 0:
                           if perksc2 == "french_bread_gud":
                               perksc2 = barryperks[0]
@@ -1006,6 +972,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = barryperks[0]
                               print(c2perks)
+                              
                       if AAAA == 1:
                           if perksc2 == "french_bread_gud":
                               perksc2 = barryperks[1]
@@ -1013,6 +980,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = barryperks[1]
                               print(c2perks)
+                              
                       if AAAA == 2:
                           if perksc2 == "french_bread_gud":
                               perksc2 = barryperks[2]
@@ -1020,6 +988,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = barryperks[2]
                               print(c2perks)
+                              
                       if AAAA == 3:
                           if perksc2 == "french_bread_gud":
                               perksc2 = barryperks[0]+"\n"+barryperks[1]
@@ -1027,6 +996,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = barryperks[0]+"\n"+barryperks[1]
                               print(c2perks)
+                              
                       if AAAA == 4:
                           if perksc2 == "french_bread_gud":
                               perksc2 = barryperks[0]+"\n"+barryperks[2]
@@ -1034,6 +1004,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = barryperks[0]+"\n"+barryperks[2]
                               print(c2perks)
+                              
                       if AAAA == 5:
                           if perksc2 == "french_bread_gud":
                               perksc2 = barryperks[1]+"\n"+barryperks[2]
@@ -1041,6 +1012,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = barryperks[1]+"\n"+barryperks[2]
                               print(c2perks)
+                              
                       if AAAA == 6:
                           if perksc2 == "french_bread_gud":
                               perksc2 = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
@@ -1048,12 +1020,10 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
                               print(c2perks)
-                      if perksc2 == "french_bread_gud":
-                          perksc2 = c2perks
-                      if c2perks != perksc2:
-                          c2perks = perksc2
+                              
                   if c2 == "Diana":
                       AAAA = random.randint(0, 6)
+                      
                       if AAAA == 0:
                           if perksc2 == "french_bread_gud":
                               perksc2 = dianaperks[0]
@@ -1061,6 +1031,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = dianaperks[0]
                               print(c2perks)
+                              
                       if AAAA == 1:
                           if perksc2 == "french_bread_gud":
                               perksc2 = dianaperks[1]
@@ -1068,6 +1039,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = dianaperks[1]
                               print(c2perks)
+                              
                       if AAAA == 2:
                           if perksc2 == "french_bread_gud":
                               perksc2 = dianaperks[2]
@@ -1075,6 +1047,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = dianaperks[2]
                               print(c2perks)
+                              
                       if AAAA == 3:
                           if perksc2 == "french_bread_gud":
                               perksc2 = dianaperks[0]+"\n"+dianaperks[1]
@@ -1082,6 +1055,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = dianaperks[0]+"\n"+dianaperks[1]
                               print(c2perks)
+                              
                       if AAAA == 4:
                           if perksc2 == "french_bread_gud":
                               perksc2 = dianaperks[0]+"\n"+dianaperks[2]
@@ -1089,6 +1063,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = dianaperks[0]+"\n"+dianaperks[2]
                               print(c2perks)
+                              
                       if AAAA == 5:
                           if perksc2 == "french_bread_gud":
                               perksc2 = dianaperks[1]+"\n"+dianaperks[2]
@@ -1096,6 +1071,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = dianaperks[1]+"\n"+dianaperks[2]
                               print(c2perks)
+                              
                       if AAAA == 6:
                           if perksc2 == "french_bread_gud":
                               perksc2 = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
@@ -1103,10 +1079,7 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
                               print(c2perks)
-                      if perksc2 == "french_bread_gud":
-                          perksc2 = c2perks
-                      if c2perks != perksc2:
-                          c2perks = perksc2
+                              
                   if c2 == "Diaz":
                       AAAA = random.randint(0, 2)
                       if AAAA == 0:
@@ -1181,10 +1154,6 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
                               print(c2perks)
-                      if perksc2 == "french_bread_gud":
-                          perksc2 = c2perks
-                      if c2perks != perksc2:
-                          c2perks = perksc2
                   if c2 == "Foxy":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1236,10 +1205,6 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
                               print(c2perks)
-                      if perksc2 == "french_bread_gud":
-                          perksc2 = c2perks
-                      if c2perks != perksc2:
-                          c2perks = perksc2
                   if c2 == "Marina":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1346,49 +1311,31 @@ while(game == "skyblock"):
                           elif perksc2 != "french_bread_gud":
                               c2perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
                               print(c2perks)
-                      if perksc2 == "french_bread_gud":
-                          perksc2 = c2perks
-                      if c2perks != perksc2:
-                          c2perks = perksc2
+                              
                   if c2 == "Scorpius":
-                    if perksc2 != "french_bread_gud":
+                    if perksc2 == "french_bread_gud":
                       perksc2 = scorpiusperks
-                    else:
+                      print(perksc2)
+                    elif perksc2 != "french_bread_gud":
                       c2perks = scorpiusperks
-                    if perksc2 != "french_bread_gud":
-                            print(perksc2)
-                    else:
                       print(c2perks)
-                    if perksc2 == "french_bread_gud":
-                        perksc2 = c2perks
-                    if c2perks != perksc2:
-                        c2perks = perksc2
+                      
                   if c2 == "Derpy":
-                    if perksc2 != "french_bread_gud":
+                    if perksc2 == "french_bread_gud":
                       perksc2 = derpyperks
-                    else:
-                      c2perks = derpyperks
-                    if perksc2 != "french_bread_gud":
-                            print(perksc2)
-                    else:
-                            print(c2perks)
-                    if perksc2 == "french_bread_gud":
-                        perksc2 = c2perks
-                    if c2perks != perksc2:
-                        c2perks = perksc2
+                      print(perksc2)
+                    elif perksc2 != "french_bread_gud":
+                      c1perks = derpyperks
+                      print(c2perks)
+                      
                   if c2 == "Jerry":
-                    if perksc2 != "french_bread_gud":
-                      perksc2 = jerryperks
-                    else:
-                      c2perks = jerryperks
-                    if perksc2 != "french_bread_gud":
-                            print(perksc2)
-                    else:
-                            print(c2perks)
                     if perksc2 == "french_bread_gud":
-                        perksc2 = c2perks
-                    if c2perks != perksc2:
-                        c2perks = perksc2
+                      perksc2 = jerryperks
+                      print(perksc2)
+                    elif perksc2 != "french_bread_gud":
+                      c1perks = jerryperks
+                      print(c2perks)
+                      
               if AAA == "3":
                   if c3 == "Aatrox":
                       AAAA = random.randint(0, 6)
@@ -1441,10 +1388,7 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
                               print(c3perks)
-                      if perksc3 == "french_bread_gud":
-                          perksc3 = c3perks
-                      if c3perks != perksc3:
-                          c3perks = perksc3
+                              
                   if c3 == "Barry the Wizard":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1496,10 +1440,7 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
                               print(c3perks)
-                      if perksc3 == "french_bread_gud":
-                          perksc3 = c3perks
-                      if c3perks != perksc3:
-                          c3perks = perksc3
+                              
                   if c3 == "Diana":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1551,10 +1492,7 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
                               print(c3perks)
-                      if perksc3 == "french_bread_gud":
-                          perksc3 = c3perks
-                      if c3perks != perksc3:
-                          c3perks = perksc3
+                              
                   if c3 == "Diaz":
                       AAAA = random.randint(0, 2)
                       if AAAA == 0:
@@ -1578,6 +1516,7 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = diazperks[0]+"\n"+diazperks[1]
                               print(c3perks)
+                              
                   if c3 == "Cole the Miner":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1629,10 +1568,7 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
                               print(c3perks)
-                      if perksc3 == "french_bread_gud":
-                          perksc3 = c3perks
-                      if c3perks != perksc3:
-                          c3perks = perksc3
+
                   if c3 == "Foxy":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1684,10 +1620,7 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
                               print(c3perks)
-                      if perksc3 == "french_bread_gud":
-                          perksc3 = c3perks
-                      if c3perks != perksc3:
-                          c3perks = perksc3
+                              
                   if c3 == "Marina":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1739,10 +1672,7 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
                               print(c3perks)
-                      if perksc3 == "french_bread_gud":
-                          perksc3 = c3perks
-                      if c3perks != perksc3:
-                          c3perks = perksc3
+                              
                   if c3 == "Paul":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1794,50 +1724,31 @@ while(game == "skyblock"):
                           elif perksc3 != "french_bread_gud":
                               c3perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
                               print(c3perks)
-                      if perksc3 == "french_bread_gud":
-                          perksc3 = c3perks
-                      if c3perks != perksc3:
-                          c3perks = perksc3
+                              
                   if c3 == "Scorpius":
-                    if perksc3 != "french_bread_gud":
+                    if perksc3 == "french_bread_gud":
                       perksc3 = scorpiusperks
-                    else:
+                      print(perksc3)
+                    elif perksc3 != "french_bread_gud":
                       c3perks = scorpiusperks
-                    if perksc3 != "french_bread_gud":
-                            print(perksc3)
-                    else:
                       print(c3perks)
-                    if perksc3 == "french_bread_gud":
-                        perksc3 = c3perks
-                    if c3perks != perksc3:
-                        c3perks = perksc3
+                      
                   if c3 == "Derpy":
-                    if perksc3 != "french_bread_gud":
+                    if perksc3 == "french_bread_gud":
                       perksc3 = derpyperks
-                    else:
+                      print(perksc3)
+                    elif perksc3 != "french_bread_gud":
                       c3perks = derpyperks
-                    if perksc3 != "french_bread_gud":
-                            print(perksc3)
-                    else:
-                            print(c3perks)
-                    if perksc3 == "french_bread_gud":
-                        perksc3 = c3perks
-                    if c3perks != perksc3:
-                        c3perks = perksc3
+                      print(c3perks)
+                      
                   if c3 == "Jerry":
-                    if perksc3 != "french_bread_gud":
-                      perksc3 = jerryperks
-                    else:
-                      c3perks = jerryperks
-                    if perksc3 != "french_bread_gud":
-                            print(perksc3)
-                    else:
-                            print(c3perks)
                     if perksc3 == "french_bread_gud":
-                        perksc3 = c3perks
-                    if c3perks != perksc3:
-                        c3perks = perksc3
-                        c3perks = jerryperks
+                      perksc3 = jerryperks
+                      print(perksc3)
+                    elif perksc3 != "french_bread_gud":
+                      c3perks = jerryperks
+                      print(c3perks)
+                      
               if AAA == "4":
                   if c4 == "Aatrox":
                       AAAA = random.randint(0, 6)
@@ -1890,10 +1801,7 @@ while(game == "skyblock"):
                           elif perksc4 != "french_bread_gud":
                               c4perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
                               print(c4perks)
-                      if perksc4 == "french_bread_gud":
-                          perksc4 = c4perks
-                      if c4perks != perksc4:
-                          c4perks = perksc4
+                              
                   if c4 == "Barry the Wizard":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1945,10 +1853,7 @@ while(game == "skyblock"):
                           elif perksc4 != "french_bread_gud":
                               c4perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
                               print(c4perks)
-                      if perksc4 == "french_bread_gud":
-                          perksc4 = c4perks
-                      if c4perks != perksc4:
-                          c4perks = perksc4
+                              
                   if c4 == "Diana":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2000,10 +1905,7 @@ while(game == "skyblock"):
                           elif perksc4 != "french_bread_gud":
                               c4perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
                               print(c4perks)
-                      if perksc4 == "french_bread_gud":
-                          perksc4 = c4perks
-                      if c4perks != perksc4:
-                          c4perks = perksc4
+                              
                   if c4 == "Diaz":
                       AAAA = random.randint(0, 2)
                       if AAAA == 0:
@@ -2078,10 +1980,7 @@ while(game == "skyblock"):
                           elif perksc4 != "french_bread_gud":
                               c4perks = coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
                               print(c4perks)
-                      if perksc4 == "french_bread_gud":
-                          perksc4 = c4perks
-                      if c4perks != perksc4:
-                          c4perks = perksc4
+                              
                   if c4 == "Foxy":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2133,10 +2032,7 @@ while(game == "skyblock"):
                           elif perksc4 != "french_bread_gud":
                               c4perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
                               print(c4perks)
-                      if perksc4 == "french_bread_gud":
-                          perksc4 = c4perks
-                      if c4perks != perksc4:
-                          c4perks = perksc4
+                              
                   if c4 == "Marina":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2188,10 +2084,7 @@ while(game == "skyblock"):
                           elif perksc4 != "french_bread_gud":
                               c4perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
                               print(c4perks)
-                      if perksc4 == "french_bread_gud":
-                          perksc4 = c4perks
-                      if c4perks != perksc4:
-                          c4perks = perksc4
+                              
                   if c4 == "Paul":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2243,50 +2136,31 @@ while(game == "skyblock"):
                           elif perksc4 != "french_bread_gud":
                               c4perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
                               print(c4perks)
-                      if perksc4 == "french_bread_gud":
-                          perksc4 = c4perks
-                      if c4perks != perksc4:
-                          c4perks = perksc4
+                              
                   if c4 == "Scorpius":
-                    if perksc4 != "french_bread_gud":
+                    if perksc4 == "french_bread_gud":
                       perksc4 = scorpiusperks
-                    else:
+                      print(perksc4)
+                    elif perksc4 != "french_bread_gud":
                       c4perks = scorpiusperks
-                    if perksc4 != "french_bread_gud":
-                            print(perksc4)
-                    else:
                       print(c4perks)
-                    if perksc4 == "french_bread_gud":
-                        perksc4 = c4perks
-                    if c4perks != perksc4:
-                        c4perks = perksc4
+                        
                   if c4 == "Derpy":
-                    if perksc4 != "french_bread_gud":
+                    if perksc4 == "french_bread_gud":
                       perksc4 = derpyperks
-                    else:
+                      print(perksc4)
+                    elif perksc4 != "french_bread_gud":
                       c4perks = derpyperks
-                    if perksc4 != "french_bread_gud":
-                            print(perksc4)
-                    else:
-                            print(c4perks)
-                    if perksc4 == "french_bread_gud":
-                        perksc4 = c4perks
-                    if c4perks != perksc4:
-                        c4perks = perksc4
+                      print(c4perks)
+                      
                   if c4 == "Jerry":
-                    if perksc4 != "french_bread_gud":
-                      perksc4 = jerryperks
-                    else:
-                      c4perks = jerryperks
-                    if perksc4 != "french_bread_gud":
-                            print(perksc4)
-                    else:
-                            print(c4perks)
                     if perksc4 == "french_bread_gud":
-                        perksc4 = c4perks
-                    if c4perks != perksc4:
-                        c4perks = perksc4
-                        c4perks = jerryperks
+                      perksc4 = jerryperks
+                      print(perksc4)
+                    elif perksc4 != "french_bread_gud":
+                      c4perks = jerryperks
+                      print(c4perks)
+                      
               if AAA == "5":
                   if c5 == "Aatrox":
                       AAAA = random.randint(0, 6)
@@ -2339,10 +2213,7 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = aatroxperks[0]+"\n"+aatroxperks[1]+"\n"+aatroxperks[2]
                               print(c5perks)
-                      if perksc5 == "french_bread_gud":
-                          perksc5 = c5perks
-                      if c5perks != perksc5:
-                          c5perks = perksc5
+                              
                   if c5 == "Barry the Wizard":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2394,10 +2265,7 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
                               print(c5perks)
-                      if perksc5 == "french_bread_gud":
-                          perksc5 = c5perks
-                      if c5perks != perksc5:
-                          c5perks = perksc5
+                              
                   if c5 == "Diana":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2449,10 +2317,7 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = dianaperks[0]+"\n"+dianaperks[1]+"\n"+dianaperks[2]
                               print(c5perks)
-                      if perksc5 == "french_bread_gud":
-                          perksc5 = c5perks
-                      if c5perks != perksc5:
-                          c5perks = perksc5
+                              
                   if c5 == "Diaz":
                       AAAA = random.randint(0, 2)
                       if AAAA == 0:
@@ -2476,6 +2341,7 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = diazperks[0]+"\n"+diazperks[1]
                               print(c5perks)
+                              
                   if c5 == "Cole the Miner":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2527,10 +2393,7 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = coleperks[0]+"\n"+coleperks[1]+"\n"+coleperks[2]
                               print(c5perks)
-                      if perksc5 == "french_bread_gud":
-                          perksc5 = c5perks
-                      if c5perks != perksc5:
-                          c5perks = perksc5
+                              
                   if c5 == "Foxy":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2582,10 +2445,7 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = foxyperks[0]+"\n"+foxyperks[1]+"\n"+foxyperks[2]
                               print(c5perks)
-                      if perksc5 == "french_bread_gud":
-                          perksc5 = c5perks
-                      if c5perks != perksc5:
-                          c5perks = perksc5
+                              
                   if c5 == "Marina":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2637,10 +2497,7 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = marinaperks[0]+"\n"+marinaperks[1]+"\n"+marinaperks[2]
                               print(c5perks)
-                      if perksc5 == "french_bread_gud":
-                          perksc5 = c5perks
-                      if c5perks != perksc5:
-                          c5perks = perksc5
+                              
                   if c5 == "Paul":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2692,50 +2549,31 @@ while(game == "skyblock"):
                           elif perksc5 != "french_bread_gud":
                               c5perks = paulperks[0]+"\n"+paulperks[1]+"\n"+paulperks[2]
                               print(c5perks)
-                      if perksc5 == "french_bread_gud":
-                          perksc5 = c5perks
-                      if c5perks != perksc5:
-                          c5perks = perksc5
+                              
                   if c5 == "Scorpius":
-                    if perksc5 != "french_bread_gud":
+                    if perksc5 == "french_bread_gud":
                       perksc5 = scorpiusperks
-                    else:
+                      print(perksc5)
+                    elif perksc5 != "french_bread_gud":
                       c5perks = scorpiusperks
-                    if perksc5 != "french_bread_gud":
-                            print(perksc5)
-                    else:
                       print(c5perks)
-                    if perksc5 == "french_bread_gud":
-                        perksc5 = c5perks
-                    if c5perks != perksc5:
-                        c5perks = perksc5
+                      
                   if c5 == "Derpy":
-                    if perksc5 != "french_bread_gud":
+                    if perksc5 == "french_bread_gud":
                       perksc5 = derpyperks
-                    else:
+                      print(perksc5)
+                    elif perksc5 != "french_bread_gud":
                       c5perks = derpyperks
-                    if perksc5 != "french_bread_gud":
-                            print(perksc5)
-                    else:
-                            print(c5perks)
-                    if perksc5 == "french_bread_gud":
-                        perksc5 = c5perks
-                    if c5perks != perksc5:
-                        c5perks = perksc5
+                      print(c5perks)
+                        
                   if c5 == "Jerry":
-                    if perksc5 != "french_bread_gud":
-                      perksc5 = jerryperks
-                    else:
-                      c5perks = jerryperks
-                    if perksc5 != "french_bread_gud":
-                            print(perksc5)
-                    else:
-                            print(c5perks)
                     if perksc5 == "french_bread_gud":
-                        perksc5 = c5perks
-                    if c5perks != perksc5:
-                        c5perks = perksc5
-                        c5perks = jerryperks
+                      perksc5 = jerryperks
+                      print(perksc5)
+                    elif perksc5 != "french_bread_gud":
+                      c5perks = jerryperks
+                      print(c5perks)
+                      
           if AA == "candidates":
               print("The current candidates are:", c1+",", c2+",", c3+",", c4+",", "and "+c5)
       while voteNow == 1:
