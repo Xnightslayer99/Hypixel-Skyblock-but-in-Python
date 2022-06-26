@@ -214,6 +214,7 @@ ewdam = 0
 # equipedBoots = "none"
 # equipedWeapon = "fist"
 dammul = 0
+basedam = 5
 gameworks = 1
 coins = 1
 stats = 1
@@ -375,6 +376,30 @@ while True:
 if game == "skyblock":
   cls()
   print("Skyblock has been chosen.")
+damsys = input("Would you like the old or new damage calculation(old is pre strength nerf)")
+if damsys == "old" or damsys == "Old":
+  def damcalc():
+    global cc
+    global damage
+    if cc > 100:
+      cc = 100
+    c = random.randint(1, 100)
+    if c > cc:
+      damage = (basedam + ewdam + stre/5) * (1 + stre/100) * (1+dammul/100)
+    elif c <= cc:
+      damage = (basedam + ewdam + stre/5) * (1 + stre/100) * (1+cd/100) * (1+dammul/100)
+  GameRunAllow = True
+elif damsys == "new" or damsys == "New":
+  def damcalc():
+    global cc
+    global damage
+    if cc > 100:
+      cc = 100
+    c = random.randint(1, 100)
+    if c > cc:
+      damage = (basedam + ewdam) * (1 + stre/100) * (1 + dammul / 100)
+    elif c <= cc:
+      damage = (basedam + ewdam) * (1 + stre/100) * (1 + cd / 100) * (1 + dammul / 100)
 while(game == "skyblock"):
   #saved = [cheatCodes, badNames, chooseName, pname, spname, hp, maxhp, infhp, monika, minika, stre, chosenClass, cd, defence, fero, scc, petluck, mfortune, ffortune, fofortune, magicFind, intee, abildam, bdam, ewdam, dammul, gameworks, coins, stats, haswatch, xp, fibsh, gtime, ggtime, eyes, souls, cxp, csl, cm, sm, cslxp, fslxp, fcm, fsm, fsl, fxp, fslm,fasl, faxp, faslxp, facm, fasm, faddc, IC, ts, em, mc1, mc2, mc3, mc4, mc5, c1, c2, c3, c4, c5, smc1, smc2, smc3, cml, voteNow, slayerXpMod, c1perks, perksc1, c2perks, perksc2, c3perks, perksc3, c4perks, perksc4, c5perks, perksc5, perksm]
   fxpg = (12*fslm)
@@ -494,6 +519,11 @@ while(game == "skyblock"):
           if AA == "see perks":
               AAA = input("Whos perks do you wish to see?(enter number corresponding to the candidate that you wish to see)")
               if AAA == "1":
+                if c1perks != "None":
+                    print(c1perks)
+                elif perksc1 != "french_bread_gud":
+                    print(perksc1)
+                else:
                   if c1 == "Aatrox":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -904,6 +934,11 @@ while(game == "skyblock"):
                       print(c1perks)
                       
               if AAA == "2":
+                if c2perks != "None":
+                    print(c2perks)
+                elif perksc2 != "french_bread_gud":
+                    print(perksc2)
+                else:
                   if c2 == "Aatrox":
                       AAAA = random.randint(0, 6)
                       
@@ -1337,6 +1372,11 @@ while(game == "skyblock"):
                       print(c2perks)
                       
               if AAA == "3":
+                if c3perks != "None":
+                    print(c3perks)
+                elif perksc3 != "french_bread_gud":
+                    print(perksc3)
+                else:
                   if c3 == "Aatrox":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -1750,6 +1790,11 @@ while(game == "skyblock"):
                       print(c3perks)
                       
               if AAA == "4":
+                if c4perks != "None":
+                    print(c4perks)
+                elif perksc4 != "french_bread_gud":
+                    print(perksc4)
+                else:
                   if c4 == "Aatrox":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2162,6 +2207,11 @@ while(game == "skyblock"):
                       print(c4perks)
                       
               if AAA == "5":
+                if c5perks != "None":
+                    print(c5perks)
+                elif perksc5 != "french_bread_gud":
+                    print(perksc5)
+                else:
                   if c5 == "Aatrox":
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
@@ -2737,7 +2787,7 @@ while(game == "skyblock"):
                 if TK2 == "yes":
                   print("you have completed your first task poggers")
   elif A == "+100 strength":
-    stats = stats+100
+    stre = stre+100
     gtime=gtime+1
   elif A == "lvl up farming":
     faxp=faxp+1000
@@ -2749,7 +2799,7 @@ while(game == "skyblock"):
     print("you break a tree")
     if C == 7:
       print("+1 strength")
-      stats = stats+1
+      stre = stre+1
       gtime=gtime+1
   elif A == "catch fibsh":
     print("you catch fibsh")
@@ -2773,10 +2823,11 @@ while(game == "skyblock"):
           coins = coins+7
           gtime=gtime+1
       if X == 2:
-          if stats>1:
+          damcalc()
+          if damage>10:
               print("you found a zombie and killed it, you got 9 coins")
               coins = coins+9
-              stats = stats+1
+              basedam = basedam+1
               gtime=gtime+1
               cxp=cxp+5
           else:
@@ -2786,13 +2837,14 @@ you also lose half of your coins, what a noob""")
               gtime=gtime+1    
       if X == 3:
           print("you stumble upon a tree and break it, +1 stats and +2 coins")
-          stats = stats+1
+          stre = stre+1
           coins = coins+1
           gtime=gtime+1
       if X == 4:
-          if stats>20:
+          damcalc()
+          if damage>20:
               print("you fight an enderman and kill it, +70 coins and +5 strength")
-              stats=stats+5
+              stre=stre+5
               coins=coins+70
               gtime=gtime+1
           else:
@@ -2814,25 +2866,26 @@ you also lose half of your coins, what a noob""")
           G = random.randint(1,2)
           if G == 1:
             print("you find a random zombie")
-            if stats>=150:
+            damcalc()
+            if damage>=25:
                 print("you kill it and gain some coins, +5 coins, +5 strength")
                 coins=coins+5
-                stats=stats+5
+                stre=stre+5
                 gtime=gtime+1
                 cxp=cxp+35
-            if stats<150:
+            if damage<25:
                   print("you died and lost half your coins")
                   coins=coins/2
                   gtime=gtime+1
           if G == 2:
               print("you find a spider and fight it")
-              if stats>=160:
+              if damage>=26:
                 print("you kill it, +6 coins, +6 strength")
                 coins=coins+6
-                stats=stats+6
+                stre=stre+6
                 gtime=gtime+1
                 cxp=cxp+12
-              if stats<160:
+              if damage<26:
                 print("you died L you lost half your coins")
                 coins=coins/2
                 gtime=gtime+1
@@ -2856,18 +2909,18 @@ you also lose half of your coins, what a noob""")
     fxp=fxp+1000
   if A == "farming level up":
     faxp=faxp+1000
-  if cxp == 1000:
+  if cxp >= 1000 and csl < 1:
     print("you leveled up your combat to lvl 1 gratz and gained 10k coins")
     coins=coins+10000
-    stats=stats+100
+    dammul = dammul+4
     csl=csl+1
-    print("Next combat level is at 2000 combat xp")
-  if cxp == (csl+1)*1000:
+    print(f"Next combat level is at {((csl+1)*1000)-cxp} combat xp")
+  if cxp >= (csl+1)*1000 and cxp < (csl+2)*1000:
     csl=csl+1
     print("you leveled up your combat to lvl", csl, "gratz and gained", 10*cm, "k coins")
     coins=coins+(10000*sm)
-    stats=stats+(100*sm)
-    print("Next combat level is at", (csl+1)*1000, "combat xp")
+    dammul=dammul+4
+    print("Next combat level is at", ((csl+1)*1000)-cxp, "combat xp")
   if (csl*cslxp) == (10*cslxp):
     cslxp=cslxp+1
     sm=sm+1
@@ -2886,14 +2939,16 @@ you also lose half of your coins, what a noob""")
   if fxp == 1000:
     print("you leveled up your fibsh skill to lvl 1 gratz and gained 10k coins")
     coins=coins+10000
-    stats=stats+100
+    maxhp = maxhp + 2
+    hp = hp + 2
     csl=csl+1
     print("Next combat level is at 2000 fibshing xp")
   if fxp == (fsl+1)*1000:
     fsl=fsl+1
     print("you leveled up your fibshing to lvl", fsl, "gratz and gained", 10*fcm, "k coins")
     coins=coins+(10000*fsm)
-    stats=stats+(100*fsm)
+    maxhp = maxhp + 2
+    hp = hp + 2
     print("Next fibshing level is at", (fsl+1)*1000, "fibshing xp")
   if (fsl*fslxp) == (10*fslxp):
     fslxp=fslxp+1
@@ -2914,17 +2969,20 @@ you also lose half of your coins, what a noob""")
   if faxp == 1000:
     print("you leveled up your farming to lvl 1 gratz and gained 10k coins")
     coins=coins+10000
-    stats=stats+100
+    ffortune = ffortune + 4
+    maxhp = maxhp + 2
+    hp = hp + 2
     fasl=fasl+1
     print("Next farming level is at 2000 farming xp")
   if faxp == (fasl+1)*1000:
     fasl=fasl+1
-    faddc=faddc+4
     print("you leveled up your farming to lvl", fasl, "gratz and gained", 10*facm, "k coins")
     coins=coins+(10000*facm)
-    stats=stats+(100*fasm)
+    ffortune = ffortune + 4
+    maxhp = maxhp + 2
+    hp = hp + 2
     print("Next farming level is at", (fasl+1)*1000, "farming xp")
-    print("your farming double drop chance is now", faddc, "dev note: later ill work on triple drop chance rn there is only double drop chance")
+    print("your farming double drop chance is now", ffortune, "dev note: later ill work on triple drop chance rn there is only double drop chance")
   if (fasl*faslxp) == (10*faslxp):
     faslxp=faslxp+1
     fasm=fasm+1
