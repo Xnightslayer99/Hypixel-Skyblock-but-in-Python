@@ -346,13 +346,32 @@ def mayorElectionReset():
   tempperksm = "french_bread_gud"
   global slayerXpMod
   slayerXpMod = 1
+#dropcalc(ore=)
+ores = {
+    "coal" : 5,
+    "iron" : 5,
+    "gold" : 6,
+    "lapis" : 7,
+    "redstone" : 7,
+    "emerald" : 9,
+    "diamond" : 10,
+    "quartz" : 5,
+    "mithril" : 45,
+    "titanium" : 100,
+    "glowstone" : 7,
+    "obsidian" : 20,
+    "gemstone" : {
+        "xp" : 70,
+        "drops" : dropcalc(gemstone)
+    }
+}
 mayors = ["Aatrox", "Barry the Wizard", "Cole the Miner", "Diana", "Diaz", "Foxy", "Marina", " Paul"]
 smayors = ["Jerry", "Derpy", "Scorpius"]
 smayor = "Nancy"
 cmayor = "None"
 cls()
 print("Use windowed fullscreen for the best viewing!")
-print("Join the testing discord server for updates and some info!https://discord.gg/Sn2A36M")
+print("Join the testing discord server for updates and some info! https://discord.gg/Sn2A36M")
 print("Most Mayors currently have no function this is because they are most likely still being worked on.")
 while True:
   try:
@@ -377,7 +396,7 @@ if game == "skyblock":
   cls()
   print("Skyblock has been chosen.")
 damsys = input("Would you like the old or new damage calculation(old is pre strength nerf)")
-if damsys == "old" or damsys == "Old":
+if damsys == "old" or damsys == "Old": #damage system
   def damcalc():
     global cc
     global damage
@@ -437,14 +456,25 @@ while(game == "skyblock"):
     print(f"Oh, hello {spname}, Thank you for voting for me!\nHere is your reward.")
     coins = coins+1000000
     print(f"Game: You gained 1000000 coins. You now have {coins} coins.")
+  def doexp(xp=mining, ore=mithril):
+    if xp == mining:
+        if ore == coal:
+            miningxp = miningxp+
   if A == "Stop" or A == "exit" or A == "Exit" or A == "stop":
     game = "stopped"
-  if A == "vote":
+  if A == "dwarven":
+    if hotmlvl >= 1:
+        print("Travelling to the dwarven mines")
+    else:
+        print("Error: You dont have a high enough Hotm level")
+  if A == "Deep":
+    if mininglvl >= 5:
+  if A == "vote": #voting lmao
       if smayor != 0:
           print("The current mayor is", smayor)
       else:
           print("The current mayor is", cmayor)
-      aa = random.randint(0, 8)
+      aa = random.randint(0, 8) #making all the candidates
       mc1 = aa
       if aa == 8:
           aaa = random.randint(0, 2)
@@ -511,7 +541,7 @@ while(game == "skyblock"):
       print("The current candidates are:", c1+",", c2+",", c3+",", c4+",", "and "+c5)
       candidates = c1 + c2 + c3 + c4 + c5
       pVoteConfirm = True
-      while (pVoteConfirm == True):
+      while (pVoteConfirm == True): #voting confirming
           AA = input("What will you do in the election.(valid responses are: 'vote', 'see perks', and 'candidates' if you choose 'vote' you will be forced to vote) ")
           if AA == "vote":
               voteNow = True
@@ -524,7 +554,7 @@ while(game == "skyblock"):
                 elif perksc1 != "french_bread_gud":
                     print(perksc1)
                 else:
-                  if c1 == "Aatrox":
+                  if c1 == "Aatrox": #aatrox perks making
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
                           if perksc1 == "french_bread_gud":
@@ -579,7 +609,7 @@ while(game == "skyblock"):
                           perksc1 = c1perks
                       if c1perks != perksc1:
                           c1perks = perksc1
-                  if c1 == "Barry the Wizard":
+                  if c1 == "Barry the Wizard": #barry perks making
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
                           if perksc1 == "french_bread_gud":
@@ -630,7 +660,7 @@ while(game == "skyblock"):
                           elif perksc1 != "french_bread_gud":
                               c1perks = barryperks[0]+"\n"+barryperks[1]+"\n"+barryperks[2]
                               print(c1perks)
-                  if c1 == "Diana":
+                  if c1 == "Diana": #diana perks making
                       AAAA = random.randint(0, 6)
                       if AAAA == 0:
                           if perksc1 == "french_bread_gud":
